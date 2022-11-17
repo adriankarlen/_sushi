@@ -13,7 +13,7 @@ main {
     min-height: 100vh;
 }
 
-#traichu {
+#adk-sushi {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -229,7 +229,7 @@ aside svg { height: 4.5rem; }
 @media screen and (min-width: 48em) {
     header { display: flex; }
     
-    #traichu {
+    #adk-sushi {
         padding: 0;
         width: 45rem; /* 720px */
     }
