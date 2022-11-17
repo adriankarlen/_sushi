@@ -100,17 +100,15 @@ aside svg { height: 4.5rem; }
 }
 
 #dock li:nth-child(1) a:focus,
-#dock li:nth-child(1) a:hover { fill: hsl(5, 81%, 56%); } /* Gmail */
+#dock li:nth-child(1) a:hover { fill: hsl(350.1, 100%, 72.5%); } /* Gmail */
 #dock li:nth-child(2) a:focus,
-#dock li:nth-child(2) a:hover { fill: hsl(217, 89%, 61%); } /* Google Calendar */
+#dock li:nth-child(2) a:hover { fill: hsl(204, 100%, 70.6%); } /* Google Calendar */
 #dock li:nth-child(3) a:focus,
-#dock li:nth-child(3) a:hover { fill: hsl(44, 100%, 50%); } /* Google Keep */
+#dock li:nth-child(3) a:hover { fill: hsl(47.3, 76.5%, 64.9%); } /* Google Keep */
 #dock li:nth-child(4) a:focus,
-#dock li:nth-child(4) a:hover { fill: var(--primary-link-hover-color); } /* Notion */
+#dock li:nth-child(4) a:hover { fill: hsl(144.9, 82.2%, 58%); } /* Notion */
 #dock li:nth-child(5) a:focus,
-#dock li:nth-child(5) a:hover { fill: hsl(102, 53%, 52%); } /* Github */
-#dock li:nth-child(6) a:focus,
-#dock li:nth-child(6) a:hover { fill: hsl(14, 89%, 53%); } /* Figma */
+#dock li:nth-child(5) a:hover { fill: hsl(304.1, 81.1%, 75.1%); } /* Figma */
 
 #dock svg { height: 1.5rem; }
 
@@ -166,8 +164,8 @@ aside svg { height: 4.5rem; }
 
 #search input:focus {
     background-color: hsl(var(--color-white-hsl) / 0.025);
-    border-color: var(--color-orange);
-    outline-color: hsl(var(--color-orange-hsl) / 0.25);
+    border-color: var(--color-bright-red);
+    outline-color: hsl(var(--color-bright-red-hsl) / 0.25);
 }
 
 #bookmarks {
