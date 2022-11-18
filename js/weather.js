@@ -1,14 +1,6 @@
-function dateTime() {
-    const date = new Date();
-    let today = date.toDateString();
-    let time = date.toLocaleTimeString();
-    document.getElementById('date-time').innerHTML =
-        '<p id="date">' + today + '</p><p id="time">' + time + '</p>';
-    setTimeout(dateTime, 1000);
-}
-
-function weatherBalloon(cityID) {
-    var apiKey = ''; //OpenWeather API key
+const setWeatherBalloon = (cityID) => {
+    debugger;
+    var apiKey = '39a8b902fc186b78b27fc089eec5508c';
     fetch(
         'https://api.openweathermap.org/data/2.5/weather?id=' +
             cityID +
@@ -38,9 +30,6 @@ function weatherBalloon(cityID) {
                 tempC +
                 '&deg;C</p>';
         });
-}
+};
 
-function start() {
-    dateTime();
-    weatherBalloon(2673730); //OpenWeather city ID
-}
+export { setWeatherBalloon };
