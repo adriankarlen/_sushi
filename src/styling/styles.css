@@ -40,6 +40,8 @@ header {
 
 #weather { text-align: right; }
 
+#date-time { text-align: left; }
+
 #weather img {
     display: inline-flex;
     margin-right: var(--spacing-xs);
