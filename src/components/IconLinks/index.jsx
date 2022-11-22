@@ -8,7 +8,7 @@ export default function IconLinks() {
                     <a
                         href={link.url}
                         key={index}
-                        target='_blank'
+                        target='_self'
                         rel='noopener noreferrer'
                     >
                         <svg

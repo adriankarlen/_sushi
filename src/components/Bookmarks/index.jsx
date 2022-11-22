@@ -10,7 +10,7 @@ export default function Bookmarks() {
                         <a
                             href={bookmark.url}
                             key={index}
-                            target='_blank'
+                            target='_self'
                             rel='noopener noreferrer'
                         >
                             <img
