@@ -20,6 +20,12 @@
                 "title": "Omni",
                 "url": "https://omni.se/",
                 "image": "https://icons.duckduckgo.com/ip3/omni.se.ico"
+            },
+            {
+                "id": 4,
+                "title": "Reddit",
+                "url": "https://www.reddit.com/",
+                "image": "https://icons.duckduckgo.com/ip3/reddit.com.ico"
             }
         ]
     },
@@ -86,6 +92,18 @@
                 "title": "Disney+",
                 "url": "https://www.disneyplus.com/",
                 "image": "https://icons.duckduckgo.com/ip3/www.disneyplus.com.ico"
+            },
+            {
+                "id": 3,
+                "title": "HBO Max",
+                "url": "https://www.hbomax.com/",
+                "image": "https://icons.duckduckgo.com/ip3/www.hbomax.com.ico"
+            },
+            {
+                "id": 4,
+                "title": "Crunchyroll",
+                "url": "https://www.crunchyroll.com/",
+                "image": "https://icons.duckduckgo.com/ip3/www.crunchyroll.com.ico"
             }
         ]
     }
