@@ -6,7 +6,7 @@ export default function Bookmarks() {
             {bookmarks.map((category) => (
                 <ul>
                 {category.bookmarks.map((bookmark, index) => (
-                    <li>
+                    <li key= {bookmark.id} >
                         <a
                             href={bookmark.url}
                             key={index}
