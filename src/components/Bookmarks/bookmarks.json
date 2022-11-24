@@ -44,6 +44,18 @@
                 "title": "Twitter",
                 "url": "https://twitter.com/",
                 "image": "https://icons.duckduckgo.com/ip3/twitter.com.ico"
+            },
+            {
+                "id": 3,
+                "title": "Discord",
+                "url": "https://discordapp.com/",
+                "image": "https://icons.duckduckgo.com/ip3/discordapp.com.ico"
+            },
+            {
+                "id": 4,
+                "title": "LinkedIn",
+                "url": "https://www.linkedin.com/",
+                "image": "https://icons.duckduckgo.com/ip3/www.linkedin.com.ico"
             }
         ]
     },

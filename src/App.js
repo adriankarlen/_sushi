@@ -3,6 +3,7 @@ import IconLinks from './components/IconLinks';
 import Bookmarks from './components/Bookmarks';
 import Weather from './components/Weather';
 import DateTime from './components/DateTime';
+import SearchBox from './components/SearchBox';
 
 function App() {
     return (
@@ -22,15 +23,7 @@ function App() {
                     </nav>
                     <section id='search'>
                         <h2 className='sr-only'>Search</h2>
-                        <form
-                            action='https://search.brave.com/search/'
-                            method='get'
-                        >
-                            <input type='text' id='q' name='q' autoFocus />
-                            <button className='sr-only' tabIndex='-1'>
-                                Search
-                            </button>
-                        </form>
+                        <SearchBox />
                     </section>
                     <section id='bookmarks'>
                         <h2 className='sr-only'>Bookmarks</h2>
