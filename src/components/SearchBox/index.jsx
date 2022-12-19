@@ -77,7 +77,7 @@ export default function SearchBox() {
         event.preventDefault();
         const q = event.target.q.value.trim();
         const url = parseQuery(q);
-        window.open(url, '_self', );
+        window.open(url, '_self', 'noopener noreferrer');
     }
 
     return (
