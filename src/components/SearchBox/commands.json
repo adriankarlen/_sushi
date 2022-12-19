@@ -8,7 +8,7 @@
     "g": {
         "name": "GitHub",
         "searchTemplate": "/search?q={}",
-        "suggestions": ["g/trending", "g/xvvvyz/tilde", "gist.github.com"],
+        "suggestions": ["g/trending", "g/adriankarlen/_sushi", "gist.github.com"],
         "url": "https://github.com"
     },
     "r": {
@@ -17,8 +17,8 @@
         "suggestions": [
             "r/r/startpages",
             "r/r/webdev",
-            "r/r/onebag",
-            "r/r/fujix"
+            "r/r/nfl",
+            "r/r/KansasCityChiefs"
         ],
         "url": "https://www.reddit.com"
     },
@@ -29,7 +29,7 @@
     },
     "v": {
         "name": "Vercel",
-        "suggestions": ["v/xvvvyz/lliist/deployments"],
+        "suggestions": ["v/adriankarlen/sushi/deployments"],
         "url": "https://vercel.com/dashboard"
     },
     "y": {
