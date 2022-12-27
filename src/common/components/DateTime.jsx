@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import config from "./config.json";
+import config from "/src/config";
 
 
-export default function DateTime() {
+export const DateTime = () => {
     const [date, setDate] = useState(new Date());
 
     const tick = () => {

@@ -1,6 +1,6 @@
-import links from './links.json';
+import links from '../data/links';
 
-export default function IconLinks() {
+export const IconLinks = () => {
     return (
         <ul>
             {links.map((link) => (

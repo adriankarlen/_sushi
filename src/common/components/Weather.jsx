@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import config from '../../config';
 
-export default function Weather() {
+export const Weather = () => {
     const [weather, setWeather] = useState({});
+    const oW = config.openWeather;
 
     const fetchWeather = async () => {
-        const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
-        const baseUrl = process.env.REACT_APP_OPEN_WEATHER_API_URL;
-        const cityId = process.env.REACT_APP_OPEN_WEATHER_CITY_ID;
 
-        fetch(`${baseUrl}?id=${cityId}&appid=${apiKey}`)
+        fetch(`${oW.url}?id=${oW.city}&appid=${oW.key}`)
             .then((resp) => {
                 return resp.json();
             })
