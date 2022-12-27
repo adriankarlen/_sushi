@@ -1,9 +1,4 @@
-import './App.css';
-import IconLinks from './components/IconLinks';
-import Bookmarks from './components/Bookmarks';
-import Weather from './components/Weather';
-import DateTime from './components/DateTime';
-import SearchBox from './components/SearchBox';
+import { Bookmarks, DateTime, IconLinks, SearchBox, Weather } from '/src/common';
 
 function App() {
     return (
