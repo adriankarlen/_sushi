@@ -4,6 +4,7 @@ import Bookmarks from './components/Bookmarks';
 import Weather from './components/Weather';
 import DateTime from './components/DateTime';
 import SearchBox from './components/SearchBox';
+import Clock from './components/Clock';
 
 function App() {
     return (
@@ -16,7 +17,7 @@ function App() {
                 <section id='adk-sushi'>
                     <h1 className='sr-only'>_sushi</h1>
                     <aside>
-                        <img src='assets/_sushi.png' alt='sushi' />
+                        <Clock />
                     </aside>
                     <nav id='dock'>
                         <IconLinks />

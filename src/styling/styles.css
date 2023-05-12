@@ -2,6 +2,7 @@ body {
     background-color: var(--primary-background-color);
     color: var(--primary-font-color);
     font-family: var(--font-monospace);
+    /* font-weight: 400; */
     font-size: var(--font-size-body);
 }
 
@@ -54,13 +55,18 @@ header {
     font-weight: 700;
 }
 
-#time,
-#details {
-    color: var(--primary-link-color);
-    text-transform: capitalize;
+#time {
+    /* font-family: "Cartograph CF", monospace; */
+    font-weight: 600;
+    font-size: 8rem;
+    margin: 50px 0px 50px 0px;
+    color: var(--color-white);
+	text-shadow: -5px 5px 0px #eb6f92, -10px 10px #f6c177, -15px 15px 0px #C3A5E6, -20px 20px 0px #31748f;
 }
 
 #details {
+    color: var(--primary-link-color);
+    text-transform: capitalize;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -102,15 +108,15 @@ aside svg { height: 4.5rem; }
 }
 
 #dock li:nth-child(1) a:focus,
-#dock li:nth-child(1) a:hover { fill: hsl(350.1, 100%, 72.5%); } /* Gmail */
+#dock li:nth-child(1) a:hover { fill: hsl(2, 66%, 75%); } /* Gmail */
 #dock li:nth-child(2) a:focus,
-#dock li:nth-child(2) a:hover { fill: hsl(204, 100%, 70.6%); } /* Google Calendar */
+#dock li:nth-child(2) a:hover { fill: hsl(189, 43%, 73%); } /* Google Calendar */
 #dock li:nth-child(3) a:focus,
-#dock li:nth-child(3) a:hover { fill: hsl(47.3, 76.5%, 64.9%); } /* Google Keep */
+#dock li:nth-child(3) a:hover { fill: hsl(35, 88%, 72%); } /* Google Drive */
 #dock li:nth-child(4) a:focus,
-#dock li:nth-child(4) a:hover { fill: hsl(144.9, 82.2%, 58%); } /* Notion */
+#dock li:nth-child(4) a:hover { fill: hsl(197, 48%, 47%); } /* Figma */
 #dock li:nth-child(5) a:focus,
-#dock li:nth-child(5) a:hover { fill: hsl(304.1, 81.1%, 75.1%); } /* Figma */
+#dock li:nth-child(5) a:hover { fill: hsl(267, 57%, 78%); } /* Github */
 
 #dock svg { height: 1.5rem; }
 
@@ -206,6 +212,7 @@ aside svg { height: 4.5rem; }
     color: var(--primary-link-color);
     padding: var(--spacing-s);
     text-decoration: none;
+    font-weight: 600;
 }
 
 #bookmarks a:focus,
