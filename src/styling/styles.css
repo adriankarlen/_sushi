@@ -1,7 +1,7 @@
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-font-color);
-    font-family: var(--font-monospace);
+    font-family: var(--font-sans-serif);
     /* font-weight: 400; */
     font-size: var(--font-size-body);
 }
@@ -36,6 +36,11 @@ header {
     width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    font-weight: 400;
+}
+
 #date-time,
 #weather { flex: 1 1 auto; }
 
@@ -56,10 +61,8 @@ header {
 }
 
 #time {
-    /* font-family: "Cartograph CF", monospace; */
-    font-weight: 600;
     font-size: 8rem;
-    margin: 50px 0px 50px 0px;
+    font-weight: 800;
     color: var(--color-white);
 	text-shadow: -5px 5px 0px #eb6f92, -10px 10px #f6c177, -15px 15px 0px #C3A5E6, -20px 20px 0px #31748f;
 }
@@ -71,6 +74,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    font-weight: 500;
 }
 
 .separator { margin: 0 var(--spacing-xs); }
@@ -212,7 +216,8 @@ aside svg { height: 4.5rem; }
     color: var(--primary-link-color);
     padding: var(--spacing-s);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    /* font-family: var(--font-monospace); */
 }
 
 #bookmarks a:focus,

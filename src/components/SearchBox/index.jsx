@@ -2,19 +2,21 @@ import commands from './commands.json';
 import config from './config.json';
 
 export default function SearchBox() {
-
     const isUrl = (str) => {
-        const pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
-            '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
-            '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-            '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-            '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-            '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
+        const pattern = new RegExp(
+            '^(https?:\\/\\/)?' + // protocol
+                '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
+                '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
+                '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
+                '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
+                '(\\#[-a-z\\d_]*)?$',
+            'i'
+        ); // fragment locator
         return !!pattern.test(str);
     };
 
     const hasProtocol = (str) => {
-        const pattern = new RegExp('^(https?:\\/\\/)', 'i');
+        const pattern = /^(https?:\/\/)/i;
         return !!pattern.test(str);
     };
 
@@ -24,7 +26,7 @@ export default function SearchBox() {
         const baseUrl = `${parser.protocol}//${parser.hostname}`;
         const rest = `${parser.pathname}${parser.search}`;
         return [baseUrl, rest];
-    }
+    };
 
     const formatSearchUrl = (url, searchPath, search) => {
         if (!searchPath) return url;
@@ -32,7 +34,7 @@ export default function SearchBox() {
         const urlQuery = encodeURIComponent(search);
         searchPath = searchPath.replace(/{}/g, urlQuery);
         return baseUrl + searchPath;
-      }
+    };
 
     const parseQuery = (raw) => {
         const q = raw.trim();
@@ -70,7 +72,6 @@ export default function SearchBox() {
         const [baseUrl, rest] = splitUrl(config.defaultSearchTemplate);
         const url = formatSearchUrl(baseUrl, rest, q);
         return url;
-
     };
 
     const handleSubmit = (event) => {
@@ -78,7 +79,7 @@ export default function SearchBox() {
         const q = event.target.q.value.trim();
         const url = parseQuery(q);
         window.open(url, '_self', 'noopener noreferrer');
-    }
+    };
 
     return (
         <form onSubmit={handleSubmit}>
