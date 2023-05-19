@@ -5,10 +5,10 @@ export default function DateTime() {
 
     return (
         <section id='date-time'>
-            <h2 className='sr-only'>Date</h2>
-            <p id='date'>
+            <h4 className='sr-only'>Date</h4>
+            <h4 id='date'>
                 {date.toLocaleDateString(config.lang, config.dateOptions)}
-            </p>
+            </h4>
         </section>
     );
 }

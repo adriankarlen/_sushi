@@ -17,10 +17,10 @@ export default function Clock() {
 
     return (
         <section id='clock'>
-            <h2 className='sr-only'>Clock</h2>
-            <span id='time'>
+            <h1 className='sr-only'>Clock</h1>
+            <h1 id='time'>
                 {time.toLocaleTimeString(config.timeFormat, config.timeOptions)}
-            </span>
+            </h1>
         </section>
     );
 }

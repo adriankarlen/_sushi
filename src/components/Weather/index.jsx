@@ -33,10 +33,10 @@ export default function Weather() {
 
     return (
         <section id='weather'>
-            <h2 className='sr-only'>Location &amp; Weather</h2>
+            <h4 className='sr-only'>Location &amp; Weather</h4>
             {weather.location && (
                 <>
-                    <p id='location'>{weather.location}</p>
+                    <h4 id='location'>{weather.location}</h4>
                     <p id='details' title={weather.details.title}>
                         <img src={weather.details.icon} alt='weather-icon' />
                         {weather.details.description}

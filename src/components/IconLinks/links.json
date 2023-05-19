@@ -54,7 +54,9 @@
         "title": "Vercel",
         "url": "https://vercel.com/dashboard",
         "viewBox": "0 0 512 512",
-        "paths": ["M256,48,496,464H16Z"]
+        "paths": [
+            "M256,48,496,464H16Z"
+        ]
     },
     {
         "id": 7,
