@@ -226,6 +226,11 @@ aside svg { height: 4.5rem; }
     outline: none;
 }
 
+#bookmarks .category { 
+    font-family: var(--font-header);
+    font-weight: 700;
+}
+
 /*
     Accessible hiding for screen readers
     https://webaim.org/techniques/css/invisiblecontent/#techniques

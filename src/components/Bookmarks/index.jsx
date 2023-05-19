@@ -5,6 +5,7 @@ export default function Bookmarks() {
         <>
             {bookmarks.map((category) => (
                 <ul key={category.description}>
+                    <li className='category'>{category.description}</li>
                     {category.bookmarks.map((bookmark) => (
                         <li key={bookmark.title}>
                             <a
