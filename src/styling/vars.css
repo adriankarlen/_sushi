@@ -39,7 +39,7 @@
     :root {
         --primary-background-color: var(--color-black);
         --primary-font-color: var(--color-white);
-        --primary-link-color: hsl(var(--color-white-hsl) / 0.5);
+        --primary-link-color: hsl(248deg, 15%, 61%);
         --primary-link-hover-color: var(--color-white);
     }
 }
