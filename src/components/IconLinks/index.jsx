@@ -19,7 +19,7 @@ export default function IconLinks() {
                             preserveAspectRatio='xMidYMid meet'>
                             <title>{link.title}</title>
                             {link.paths.map((path, index) => (
-                                <path key={link.title + index} d={path} />
+                                <path key={path} d={path} />
                             ))}
                         </svg>
                     </a>
