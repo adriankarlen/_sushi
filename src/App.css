@@ -12,3 +12,5 @@
 @import url('styling/vars.css');
 /* Main Styles */
 @import url('styling/styles.css');
+/* Animations */
+@import url('styling/animations.css');

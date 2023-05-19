@@ -100,27 +100,27 @@ aside svg { height: 4.5rem; }
 
 #dock a {
     display: block;
-    fill: var(--primary-link-color);
+    stroke: var(--primary-link-color);
     transition: fill 0.125s ease-in-out;
 }
 
 #dock a:focus,
 #dock a:hover {
     animation: slime 0.75s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    fill: var(--primary-link-hover-color);
+    stroke: var(--primary-link-hover-color);
     outline: none;
 }
 
 #dock li:nth-child(1) a:focus,
-#dock li:nth-child(1) a:hover { fill: hsl(2, 66%, 75%); } /* Gmail */
+#dock li:nth-child(1) a:hover { stroke: hsl(2, 66%, 75%); } /* Gmail */
 #dock li:nth-child(2) a:focus,
-#dock li:nth-child(2) a:hover { fill: hsl(189, 43%, 73%); } /* Google Calendar */
+#dock li:nth-child(2) a:hover { stroke: hsl(189, 43%, 73%); } /* Google Calendar */
 #dock li:nth-child(3) a:focus,
-#dock li:nth-child(3) a:hover { fill: hsl(35, 88%, 72%); } /* Google Drive */
+#dock li:nth-child(3) a:hover { stroke: hsl(35, 88%, 72%); } /* Google Drive */
 #dock li:nth-child(4) a:focus,
-#dock li:nth-child(4) a:hover { fill: hsl(197, 48%, 47%); } /* Figma */
+#dock li:nth-child(4) a:hover { stroke: hsl(197, 48%, 47%); } /* Figma */
 #dock li:nth-child(5) a:focus,
-#dock li:nth-child(5) a:hover { fill: hsl(267, 57%, 78%); } /* Github */
+#dock li:nth-child(5) a:hover { stroke: hsl(267, 57%, 78%); } /* Github */
 
 #dock svg { height: 1.5rem; }
 
@@ -224,6 +224,11 @@ aside svg { height: 4.5rem; }
 #bookmarks a:hover {
     color: var(--primary-link-hover-color);
     outline: none;
+}
+
+#bookmarks .category { 
+    font-family: var(--font-header);
+    font-weight: 700;
 }
 
 /*
