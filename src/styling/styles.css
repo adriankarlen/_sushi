@@ -63,8 +63,8 @@ h1, h2, h3, h4, h5, h6 {
 #time {
     font-size: 8rem;
     font-weight: 800;
-    color: var(--color-white);
-	text-shadow: -5px 5px 0px #eb6f92, -10px 10px #f6c177, -15px 15px 0px #C3A5E6, -20px 20px 0px #31748f;
+    color: var(--ctp-mocha-text);
+	text-shadow: -5px 5px 0px var(--ctp-mocha-red-hsl), -10px 10px var(--ctp-mocha-peach-hsl), -15px 15px 0px var(--ctp-mocha-mauve-hsl), -20px 20px 0px var(--ctp-mocha-green-hsl);
 }
 
 #details {
@@ -112,15 +112,17 @@ aside svg { height: 4.5rem; }
 }
 
 #dock li:nth-child(1) a:focus,
-#dock li:nth-child(1) a:hover { stroke: hsl(2, 66%, 75%); } /* Gmail */
+#dock li:nth-child(1) a:hover { stroke: var(--ctp-mocha-red-hsl); }
 #dock li:nth-child(2) a:focus,
-#dock li:nth-child(2) a:hover { stroke: hsl(189, 43%, 73%); } /* Google Calendar */
+#dock li:nth-child(2) a:hover { stroke: var(--ctp-mocha-peach-hsl) }
 #dock li:nth-child(3) a:focus,
-#dock li:nth-child(3) a:hover { stroke: hsl(35, 88%, 72%); } /* Google Drive */
+#dock li:nth-child(3) a:hover { stroke: var(--ctp-mocha-yellow-hsl); }
 #dock li:nth-child(4) a:focus,
-#dock li:nth-child(4) a:hover { stroke: hsl(197, 48%, 47%); } /* Figma */
+#dock li:nth-child(4) a:hover { stroke: var(--ctp-mocha-green-hsl) }
 #dock li:nth-child(5) a:focus,
-#dock li:nth-child(5) a:hover { stroke: hsl(267, 57%, 78%); } /* Github */
+#dock li:nth-child(5) a:hover { stroke: var(--ctp-mocha-blue-hsl) }
+#dock li:nth-child(6) a:focus,
+#dock li:nth-child(6) a:hover { stroke: var(--ctp-mocha-muave-hsl) }
 
 #dock svg { height: 1.5rem; }
 
