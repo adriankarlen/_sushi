@@ -6,12 +6,12 @@
     https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
     https://css-tricks.com/color-alpha-anywhere/
     */
-    --color-black-hsl: 246 24% 17%; /* #232136 */
+    --color-black-hsl: 240 21% 15%; /* #1e1e2e */
     --color-black: hsl(var(--color-black-hsl));
-    --color-bright-red-hsl: 343 76% 68%; /* #eb6f92 */
+    --color-bright-red-hsl: 343 81% 75%; /* #f38ba8 */
     
     --color-bright-red: hsl(var(--color-bright-red-hsl));
-    --color-white-hsl: 241 50% 91%; /* #e0def4 */
+    --color-white-hsl: 226 64% 88%; /* #cdd6f4 */
     --color-white: hsl(var(--color-white-hsl));
 
     /* Font-families */
@@ -39,7 +39,7 @@
     :root {
         --primary-background-color: var(--color-black);
         --primary-font-color: var(--color-white);
-        --primary-link-color: hsl(248deg, 15%, 61%);
+        --primary-link-color: var(--ctp-mocha-surface2);
         --primary-link-hover-color: var(--color-white);
     }
 }
