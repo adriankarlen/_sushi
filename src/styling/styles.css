@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 8rem;
     font-weight: 800;
     color: var(--ctp-mocha-text);
+    -webkit-text-stroke: 1px var(--ctp-mocha-red-hsl);
 	text-shadow: -5px 5px 0px var(--ctp-mocha-red-hsl), -10px 10px var(--ctp-mocha-peach-hsl), -15px 15px 0px var(--ctp-mocha-mauve-hsl), -20px 20px 0px var(--ctp-mocha-green-hsl);
 }
 
