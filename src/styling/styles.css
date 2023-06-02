@@ -123,7 +123,7 @@ aside svg { height: 4.5rem; }
 #dock li:nth-child(5) a:focus,
 #dock li:nth-child(5) a:hover { stroke: var(--ctp-mocha-blue-hsl) }
 #dock li:nth-child(6) a:focus,
-#dock li:nth-child(6) a:hover { stroke: var(--ctp-mocha-muave-hsl) }
+#dock li:nth-child(6) a:hover { stroke: var(--ctp-mocha-mauve-hsl) }
 
 #dock svg { height: 1.5rem; }
 
