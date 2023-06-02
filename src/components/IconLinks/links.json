@@ -38,10 +38,15 @@
     },
     {
         "id": 5,
-        "title": "Vercel",
-        "url": "https://vercel.com/dashboard",
+        "title": "Notion",
+        "url": "https://www.notion.so/my-workspace",
         "paths": [
-            "M3 19h18l-9 -15z"
+            "M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z",
+            "M7 7h3l6 6",
+            "M8 7v10",
+            "M7 17h2",
+            "M15 7h2",
+            "M16 7v10h-1l-7 -7"
         ]
     },
     {
@@ -53,6 +58,14 @@
             "M12 12h6a2 2 0 0 1 0 4h-6m2 0a2 2 0 1 1 -2 2v-6",
             "M12 12v6a2 2 0 0 1 -4 0v-6m0 2a2 2 0 1 1 -2 -2h6",
             "M12 12h-6a2 2 0 0 1 0 -4h6m-2 0a2 2 0 1 1 2 -2v6"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Vercel",
+        "url": "https://vercel.com/dashboard",
+        "paths": [
+            "M3 19h18l-9 -15z"
         ]
     }
 ]
