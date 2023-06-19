@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const ABSOLUTE_ZERO = -273.15;
 
-export default function Weather() {
+export const Weather = () => {
     const [weather, setWeather] = useState({ location: '', details: {} });
     const [location, setLocation] = useState(null);
 
@@ -59,4 +59,4 @@ export default function Weather() {
             )}
         </section>
     );
-}
+};

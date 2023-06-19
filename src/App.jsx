@@ -1,4 +1,5 @@
-import { Bookmarks, DateTime, IconLinks, SearchBox, Weather } from '/src/common';
+import { Bookmarks, Clock, DateTime, IconLinks, SearchBox, Weather } from '/src/common';
+import './App.css';
 
 function App() {
     return (

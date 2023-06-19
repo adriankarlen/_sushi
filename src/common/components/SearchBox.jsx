@@ -1,7 +1,7 @@
 import commands from '../data/commands';
 import config from '/src/config';
 
-export default function SearchBox() {
+export const SearchBox = () => {
     const isUrl = (str) => {
         const pattern = new RegExp(
             '^(https?:\\/\\/)?' + // protocol
@@ -89,4 +89,4 @@ export default function SearchBox() {
             </button>
         </form>
     );
-}
+};

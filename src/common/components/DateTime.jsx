@@ -1,6 +1,6 @@
 import config from './config.json';
 
-export default function DateTime() {
+export const DateTime = () => {
     const date = new Date();
 
     return (
@@ -11,4 +11,4 @@ export default function DateTime() {
             </h4>
         </section>
     );
-}
+};
