@@ -1,6 +1,6 @@
-import bookmarks from './bookmarks.json';
+import bookmarks from '../data/bookmarks';
 
-export default function Bookmarks() {
+export const Bookmarks = () => {
     return (
         <>
             {bookmarks.map((category) => (

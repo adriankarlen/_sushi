@@ -1,0 +1,22 @@
+{
+    "defaultSearchTemplate": "https://search.brave.com/search?q={}",
+    "commandPathDelimiter": "/",
+    "commandSearchDelimiter": " ",
+    "lang": "en",
+    "timeFormat": "sv-SE",
+    "dateOptions": {
+        "weekday": "long",
+        "year": "numeric",
+        "month": "long",
+        "day": "numeric"
+    },
+    "timeOptions": {
+        "hour": "2-digit",
+        "minute": "2-digit"
+    },
+    "openWeather": {
+        "key":"39a8b902fc186b78b27fc089eec5508c",
+        "url":"https://api.openweathermap.org/data/2.5/weather",
+        "city":"2673730"
+    }
+}
