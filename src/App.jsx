@@ -11,7 +11,7 @@ function App() {
                 <section id='adk-sushi'>
                     <h1 className='sr-only'>_sushi</h1>
                     <aside>
-                        <img src='assets/_sushi.png' alt='sushi' />
+                        <Clock />
                     </aside>
                     <nav id='dock'>
                         <IconLinks />

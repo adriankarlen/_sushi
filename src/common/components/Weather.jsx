@@ -1,42 +1,55 @@
-import React, { useEffect, useState } from 'react';
-import config from '../../config';
+import { useEffect, useState } from 'react';
 
-export const Weather = () => {
-    const [weather, setWeather] = useState({});
-    const oW = config.openWeather;
+const ABSOLUTE_ZERO = -273.15;
 
-    const fetchWeather = async () => {
+export default function Weather() {
+    const [weather, setWeather] = useState({ location: '', details: {} });
+    const [location, setLocation] = useState(null);
 
-        fetch(`${oW.url}?id=${oW.city}&appid=${oW.key}`)
-            .then((resp) => {
-                return resp.json();
-            })
-            .then((data) => {
-                let tempK = parseFloat(data.main.temp);
-                let tempC = Math.round(tempK - 273.15);
-                setWeather({
-                    location: data.name,
-                    details: {
-                        title: `${tempC}°C`,
-                        description: data.weather[0].description,
-                        temperature: `${tempC}°C`,
-                        icon: `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
-                    }
-                });
-            });
-    };
+    if (navigator.geolocation && !location) {
+        navigator.geolocation.getCurrentPosition((position) => {
+            const { latitude, longitude } = position.coords;
+            setLocation({ lat: latitude, lng: longitude });
+        });
+    }
 
     useEffect(() => {
-        fetchWeather();
-    }, []);
+        const fetchWeather = async (lat, lng) => {
+            console.log('fetchWeather');
+            const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
+            const baseUrl = process.env.REACT_APP_OPEN_WEATHER_API_URL;
+
+            const response = await fetch(
+                `${baseUrl}?lat=${lat}&lon=${lng}&appid=${apiKey}`
+            );
+            const data = await response.json();
+
+            const tempK = parseFloat(data.main.temp, 10);
+            const tempC = Math.round(tempK - Math.abs(ABSOLUTE_ZERO));
+            setWeather({
+                location: data.name,
+                details: {
+                    title: `${tempC}°C`,
+                    description: data.weather[0].description,
+                    temperature: `${tempC}°C`,
+                    icon: `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+                }
+            });
+        };
+
+        if (location) {
+            const { lat, lng } = location;
+            fetchWeather(lat, lng);
+        }
+    }, [location]);
 
     return (
         <section id='weather'>
-            <h2 className='sr-only'>Location &amp; Weather</h2>
+            <h4 className='sr-only'>Location &amp; Weather</h4>
             {weather.location && (
                 <>
-                    <p id='location'>{weather.location}</p>
-                    <p id='details' title={weather.details.title}>
+                    <h4 id='location'>{weather.location}</h4>
+                    <p id='details' title={weather.details.main}>
                         <img src={weather.details.icon} alt='weather-icon' />
                         {weather.details.description}
                         <span className='separator'>|</span>

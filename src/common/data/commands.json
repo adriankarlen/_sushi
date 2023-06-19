@@ -2,13 +2,20 @@
     "0": {
         "name": "Local",
         "searchTemplate": ":{}",
-        "suggestions": ["0 8000", "0 8080"],
+        "suggestions": [
+            "0 8000",
+            "0 8080"
+        ],
         "url": "http://localhost:3000"
     },
     "g": {
         "name": "GitHub",
         "searchTemplate": "/search?q={}",
-        "suggestions": ["g/trending", "g/adriankarlen/_sushi", "gist.github.com"],
+        "suggestions": [
+            "g/trending",
+            "g/adriankarlen/_sushi",
+            "gist.github.com"
+        ],
         "url": "https://github.com"
     },
     "r": {
@@ -17,25 +24,31 @@
         "suggestions": [
             "r/r/startpages",
             "r/r/webdev",
-            "r/r/nfl",
-            "r/r/KansasCityChiefs"
+            "r/r/react",
+            "r/r/firefoxcss"
         ],
         "url": "https://www.reddit.com"
     },
     "s": {
         "name": "Slack",
-        "suggestions": ["s/client/T09M5UWSV"],
+        "suggestions": [
+            "s/client/T09M5UWSV"
+        ],
         "url": "https://app.slack.com"
     },
     "v": {
         "name": "Vercel",
-        "suggestions": ["v/adriankarlen/sushi/deployments"],
+        "suggestions": [
+            "v/adriankarlen/sushi/deployments"
+        ],
         "url": "https://vercel.com/dashboard"
     },
     "y": {
         "name": "YouTube",
         "searchTemplate": "/results?search_query={}",
-        "suggestions": ["y/feed/trending"],
+        "suggestions": [
+            "y/feed/trending"
+        ],
         "url": "https://youtube.com/feed/subscriptions"
     }
 }
