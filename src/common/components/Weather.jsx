@@ -15,7 +15,6 @@ export const Weather = () => {
 
     useEffect(() => {
         const fetchWeather = async (lat, lng) => {
-            console.log('fetchWeather');
             const apiKey = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
             const baseUrl = import.meta.env.VITE_OPEN_WEATHER_API_URL;
 
