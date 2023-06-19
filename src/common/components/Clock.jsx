@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import config from './config.json';
+import config from '../data/datetime.json';
 
 export const Clock = () => {
     const [time, setTime] = useState(new Date());

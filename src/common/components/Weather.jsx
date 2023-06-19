@@ -16,8 +16,8 @@ export const Weather = () => {
     useEffect(() => {
         const fetchWeather = async (lat, lng) => {
             console.log('fetchWeather');
-            const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
-            const baseUrl = process.env.REACT_APP_OPEN_WEATHER_API_URL;
+            const apiKey = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
+            const baseUrl = import.meta.env.VITE_OPEN_WEATHER_API_URL;
 
             const response = await fetch(
                 `${baseUrl}?lat=${lat}&lon=${lng}&appid=${apiKey}`

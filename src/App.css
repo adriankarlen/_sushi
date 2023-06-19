@@ -1,5 +1,3 @@
-/* Based on Josh Comeau's Custom CSS Reset - https://www.joshwcomeau.com/css/custom-css-reset/ */
-@import url('styling/reset.css');
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 /* Cascadia Code Font */
@@ -8,10 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,CRSV,MONO@300..800,1,1,1&display=swap'); 
 /* Inter Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Based on Josh Comeau's Custom CSS Reset - https://www.joshwcomeau.com/css/custom-css-reset/ */
+@import url('common/styles/reset.css');
 /* Variables */
-@import url('styling/catppuccin.css');
-@import url('styling/vars.css');
+@import url('common/styles/catppuccin.css');
+@import url('common/styles/vars.css');
 /* Main Styles */
-@import url('styling/styles.css');
+@import url('common/styles/styles.css');
 /* Animations */
-@import url('styling/animations.css');
+@import url('common/styles/animations.css');

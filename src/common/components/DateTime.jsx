@@ -1,4 +1,4 @@
-import config from './config.json';
+import config from '../data/datetime.json';
 
 export const DateTime = () => {
     const date = new Date();
