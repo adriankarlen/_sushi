@@ -1,5 +1,5 @@
 import commands from '../data/commands';
-import config from '../../config';
+import config from '../data/search';
 
 export const SearchBox = () => {
     const isUrl = (str) => {
