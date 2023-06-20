@@ -82,8 +82,14 @@ export const SearchBox = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type='text' id='q' name='q' autoFocus />
+        <form onSubmit={handleSubmit} className='flex flex-auto w-full'>
+            <input
+                type='text'
+                id='q'
+                name='q'
+                autoFocus
+                className='p-4 w-full bg-transparent bg-[right_1.25rem_center] bg-no-repeat bg-[length:1.5rem_1.5rem] rounded-full border-2 border-ctp-surface2 focus:outline focus:outline-4 focus:outline-ctp-red/25 focus:bg-ctp-surface0/25 focus:border-ctp-red hover:border-ctp-overlay0'
+            />
             <button className='sr-only' tabIndex='-1'>
                 Search
             </button>
