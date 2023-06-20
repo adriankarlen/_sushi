@@ -1,243 +1,37 @@
 body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-font-color);
     font-family: var(--font-sans-serif);
-    /* font-weight: 400; */
-    font-size: var(--font-size-body);
-}
-
-main {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-#adk-sushi {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    justify-content: center;
-    padding: var(--spacing-l) var(--spacing-m) var(--spacing-m) var(--spacing-m);
-    row-gap: var(--spacing-l);
-    width: 20rem;
-}
-
-header {
-    animation: fade 1s ease-in;
-    display: none;
-    flex: 0 1 auto;
-    flex-direction: row;
-    justify-content: center;
-    padding: var(--spacing-m) var(--spacing-m) 0 var(--spacing-m);
-    position: absolute;
-    top: 0;
-    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-header);
-    font-weight: 400;
-}
-
-#date-time,
-#weather { flex: 1 1 auto; }
-
-#weather { text-align: right; }
-
-#date-time { text-align: left; }
-
-#weather img {
-    display: inline-flex;
-    margin-right: var(--spacing-xs);
-    width: 1.5rem;
-}
-
-#date,
-#location {
-    color: var(--primary-link-hover-color);
-    font-weight: 700;
 }
 
 #time {
-    font-size: 8rem;
-    font-weight: 800;
-    color: var(--ctp-mocha-text);
-    -webkit-text-stroke: 1px var(--ctp-mocha-red-hsl);
-	text-shadow: -5px 5px 0px var(--ctp-mocha-red-hsl), -10px 10px var(--ctp-mocha-peach-hsl), -15px 15px 0px var(--ctp-mocha-mauve-hsl), -20px 20px 0px var(--ctp-mocha-green-hsl);
-}
-
-#details {
-    color: var(--primary-link-color);
-    text-transform: capitalize;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-weight: 500;
-}
-
-.separator { margin: 0 var(--spacing-xs); }
-
-aside {
-    display: flex;
-    justify-content: space-around;
-}
-
-aside img,
-aside svg { height: 4.5rem; }
-
-#dock ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-    column-gap: var(--spacing-m);
-    row-gap: var(--spacing-m);
-    padding: 0;
-}
-
-#dock a {
-    display: block;
-    stroke: var(--primary-link-color);
-    transition: fill 0.125s ease-in-out;
+    -webkit-text-stroke: 1px rgb(var(--ctp-red));
+	text-shadow: -5px 5px 0px rgb(var(--ctp-red)), -10px 10px rgb(var(--ctp-peach)), -15px 15px 0px rgb(var(--ctp-mauve)), -20px 20px 0px rgb(var(--ctp-green));
 }
 
 #dock a:focus,
 #dock a:hover {
     animation: slime 0.75s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    stroke: var(--primary-link-hover-color);
-    outline: none;
-}
-
-#dock li:nth-child(1) a:focus,
-#dock li:nth-child(1) a:hover { stroke: var(--ctp-mocha-red-hsl); }
-#dock li:nth-child(2) a:focus,
-#dock li:nth-child(2) a:hover { stroke: var(--ctp-mocha-peach-hsl) }
-#dock li:nth-child(3) a:focus,
-#dock li:nth-child(3) a:hover { stroke: var(--ctp-mocha-yellow-hsl); }
-#dock li:nth-child(4) a:focus,
-#dock li:nth-child(4) a:hover { stroke: var(--ctp-mocha-green-hsl) }
-#dock li:nth-child(5) a:focus,
-#dock li:nth-child(5) a:hover { stroke: var(--ctp-mocha-blue-hsl) }
-#dock li:nth-child(6) a:focus,
-#dock li:nth-child(6) a:hover { stroke: var(--ctp-mocha-mauve-hsl) }
-
-#dock svg { height: 1.5rem; }
-
-#search {
-    display: flex;
-    justify-content: center;
-}
-
-#search form {
-    flex: 1 1 auto;
-    width: 100%;
-}
-
-#search input {
-    background-color: transparent;
-    background-position: right 1.25rem center;
-    background-repeat: no-repeat;
-    background-size: 1.5rem 1.5rem;
-    border-radius: 0.5rem;
-    color: var(--primary-font-color);
-    font-family: var(--font-sans-serif);
-    line-height: 1.5;
-    outline: 0.25rem solid transparent;
-    padding: var(--spacing-m);
-    width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
     #search input {
         background-image: var(--svg-search-gray);
-        border: 0.125rem solid hsl(var(--color-white-hsl) / 0.25);
     }
-    
-    #search input:hover { border-color: hsl(var(--color-white-hsl) / 0.5); }    
-
-    #bookmarks a:focus,
-    #bookmarks a:hover { background-color: hsl(var(--color-white-hsl) / 0.05); }
 }
 
 @media (prefers-color-scheme: light) {
-    #weather img { filter: drop-shadow(0 0 0 hsl(var(--color-black-hsl) / 0.75)); }
-
     #search input {
         background-image: var(--svg-search-light-gray);
-        border: 0.125rem solid hsl(var(--color-black-hsl) / 0.25);
     } 
-
-    #search input:hover { border-color: hsl(var(--color-black-hsl) / 0.5); }
-
-    #bookmarks a:focus,
-    #bookmarks a:hover { background-color: hsl(var(--color-black-hsl) / 0.05); }
-}
-
-#search input:focus {
-    background-color: hsl(var(--color-white-hsl) / 0.025);
-    border-color: var(--color-bright-red);
-    outline-color: hsl(var(--color-bright-red-hsl) / 0.25);
-}
-
-#bookmarks {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#bookmarks ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#bookmarks li {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    line-height: 1;
-    margin-bottom: var(--spacing-xs);
-}
-
-.favicon {
-    margin-right: var(--spacing-s);
-    height: 1rem;
-}
-
-#bookmarks a {
-    align-items: center;
-    border-radius: 0.25rem;
-    display: flex;
-    color: var(--primary-link-color);
-    padding: var(--spacing-s);
-    text-decoration: none;
-    font-weight: 500;
-    /* font-family: var(--font-monospace); */
-}
-
-#bookmarks a:focus,
-#bookmarks a:hover {
-    color: var(--primary-link-hover-color);
-    outline: none;
 }
 
 #bookmarks .category { 
     font-family: var(--font-header);
-    font-weight: 700;
 }
 
-/*
-    Accessible hiding for screen readers
-    https://webaim.org/techniques/css/invisiblecontent/#techniques
-*/ 
 .sr-only {
     height: 1px;
     left: -10000px;
@@ -245,25 +39,4 @@ aside svg { height: 4.5rem; }
     position: absolute;
     top: auto;
     width: 1px;
-}
-
-/* Responsive Media Queries */
-@media screen and (min-width: 48em) {
-    header { display: flex; }
-    
-    #adk-sushi {
-        padding: 0;
-        width: 45rem; /* 720px */
-    }
-
-    aside img,
-    aside svg { height: 7.5rem; }
-
-    #dock ul {
-        column-gap: 0;
-        justify-content: space-around;
-        padding: 0;
-    }
-
-    #bookmarks { flex-direction: row; }
 }

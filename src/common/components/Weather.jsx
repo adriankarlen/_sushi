@@ -43,18 +43,26 @@ export const Weather = () => {
     }, [location]);
 
     return (
-        <section id='weather'>
+        <section className='flex flex-col justify-end'>
             <h4 className='sr-only'>Location &amp; Weather</h4>
             {weather.location && (
-                <>
-                    <h4 id='location'>{weather.location}</h4>
-                    <p id='details' title={weather.details.main}>
-                        <img src={weather.details.icon} alt='weather-icon' />
+                <div className='grid grid-rows-2 grid-flow-col gap-x-1 items-center'>
+                    <div className='font-bold text-right'>
+                        {weather.location}
+                    </div>
+                    <p
+                        title={weather.details.main}
+                        className='flex items-center capitalize text-ctp-surface2'>
+                        <img
+                            src={weather.details.icon}
+                            alt='weather-icon'
+                            className='mr-1.5 w-6'
+                        />
                         {weather.details.description}
-                        <span className='separator'>|</span>
+                        <span className='mx-1'>|</span>
                         {weather.details.temperature}
                     </p>
-                </>
+                </div>
             )}
         </section>
     );

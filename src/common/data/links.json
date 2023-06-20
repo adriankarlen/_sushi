@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "title": "Proton Mail",
         "url": "https://mail.proton.me",
         "paths": [
@@ -9,7 +8,6 @@
         ]
     },
     {
-        "id": 2,
         "title": "Google Drive",
         "url": "https://drive.google.com/drive/my-drive",
         "paths": [
@@ -19,7 +17,6 @@
         ]
     },
     {
-        "id": 3,
         "title": "Figma",
         "url": "https://www.figma.com/files/recent?fui102345597200000000",
         "paths": [
@@ -29,7 +26,6 @@
         ]
     },
     {
-        "id": 4,
         "title": "Github",
         "url": "https://github.com",
         "paths": [
@@ -37,7 +33,6 @@
         ]
     },
     {
-        "id": 5,
         "title": "Notion",
         "url": "https://www.notion.so/my-workspace",
         "paths": [
@@ -50,7 +45,6 @@
         ]
     },
     {
-        "id": 6,
         "title": "Slack",
         "url": "https://app.slack.com/client/T01B4QZQZ9K/C01B4QZQZ9L",
         "paths": [
@@ -61,7 +55,6 @@
         ]
     },
     {
-        "id": 7,
         "title": "Vercel",
         "url": "https://vercel.com/dashboard",
         "paths": [

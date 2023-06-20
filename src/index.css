@@ -1,0 +1,13 @@
+/* Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Variables */
+@import url('common/styles/vars.css');
+/* Main Styles */
+@import url('common/styles/styles.css');
+/* Animations */
+@import url('common/styles/animations.css');
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
