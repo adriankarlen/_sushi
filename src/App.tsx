@@ -9,13 +9,13 @@ import {
 
 function App() {
     return (
-        <div className='App min-h-screen mocha'>
-            <main className='bg-ctp-base text-ctp-text flex items-center justify-center min-h-screen flex-col'>
-                <header className='animate-fade hidden md:flex flex-row justify-center items-center p-4 absolute top-0 w-full'>
+        <div className='min-h-screen App mocha'>
+            <main className='flex flex-col items-center justify-center min-h-screen bg-ctp-base text-ctp-text'>
+                <header className='absolute top-0 flex-row justify-center hidden w-full p-4 animate-fade md:flex'>
                     <DateTime />
                     <Weather />
                 </header>
-                <section className='flex flex-1 flex-col justify-center p-8 pb-2 gap-y-8 md:p-0 w-full max-w-xs md:max-w-3xl'>
+                <section className='flex flex-col justify-center flex-1 w-full max-w-xs p-8 pb-2 gap-y-8 md:p-0 md:max-w-3xl'>
                     <h1 className='sr-only'>_sushi</h1>
                     <aside className='flex justify-around'>
                         <Clock />
@@ -29,7 +29,7 @@ function App() {
                     </section>
                     <section
                         id='bookmarks'
-                        className='flex flex-col md:flex-row items-start justify-around'>
+                        className='flex flex-col items-start justify-around md:flex-row'>
                         <h2 className='sr-only'>Bookmarks</h2>
                         <Bookmarks />
                     </section>
