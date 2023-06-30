@@ -2,10 +2,7 @@
     "0": {
         "name": "Local",
         "searchTemplate": ":{}",
-        "suggestions": [
-            "0 8000",
-            "0 8080"
-        ],
+        "suggestions": ["0 8000", "0 8080"],
         "url": "http://localhost:3000"
     },
     "g": {
@@ -31,24 +28,20 @@
     },
     "s": {
         "name": "Slack",
-        "suggestions": [
-            "s/client/T09M5UWSV"
-        ],
+        "searchTemplate": "",
+        "suggestions": ["s/client/T09M5UWSV"],
         "url": "https://app.slack.com"
     },
     "v": {
         "name": "Vercel",
-        "suggestions": [
-            "v/adriankarlen/sushi/deployments"
-        ],
+        "searchTemplate": "",
+        "suggestions": ["v/adriankarlen/sushi/deployments"],
         "url": "https://vercel.com/dashboard"
     },
     "y": {
         "name": "YouTube",
         "searchTemplate": "/results?search_query={}",
-        "suggestions": [
-            "y/feed/trending"
-        ],
+        "suggestions": ["y/feed/trending"],
         "url": "https://youtube.com/feed/subscriptions"
     }
 }

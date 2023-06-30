@@ -1,4 +1,4 @@
-import links from '../data/links';
+import links from '../data/links.json';
 
 export const IconLinks = () => {
     const colorMap = [
@@ -12,7 +12,7 @@ export const IconLinks = () => {
     ];
 
     return (
-        <ul className='flex flex-row flex-wrap justify-center list-none gap-x-4 gap-y-4 p-0 md:column-gap-0 md:justify-around md:p-0'>
+        <ul className='flex flex-row flex-wrap justify-center p-0 list-none gap-x-4 gap-y-4 md:column-gap-0 md:justify-around md:p-0'>
             {links.map((link, index) => (
                 <li key={link.title}>
                     <a
@@ -33,7 +33,7 @@ export const IconLinks = () => {
                             xmlns='http://www.w3.org/2000/svg'
                             preserveAspectRatio='xMidYMid meet'>
                             <title>{link.title}</title>
-                            {link.paths.map((path) => (
+                            {link.paths.map(path => (
                                 <path key={path} d={path} />
                             ))}
                         </svg>

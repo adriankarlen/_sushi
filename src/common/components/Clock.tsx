@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import config from '../data/datetime';
+import config from '../data/datetime.json';
 
 export const Clock = () => {
     const [time, setTime] = useState(new Date());
@@ -18,8 +18,11 @@ export const Clock = () => {
     return (
         <section id='clock'>
             <h1 className='sr-only'>Clock</h1>
-            <h1 id='time' className='text-9xl font-black text-ctp-mocha-text'>
-                {time.toLocaleTimeString(config.timeFormat, config.timeOptions)}
+            <h1 id='time' className='font-black text-9xl text-ctp-mocha-text'>
+                {time.toLocaleTimeString(
+                    config.timeFormat,
+                    config.timeOptions as Intl.DateTimeFormatOptions
+                )}
             </h1>
         </section>
     );

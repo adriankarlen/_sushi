@@ -2,19 +2,36 @@ import { useEffect, useState } from 'react';
 
 const ABSOLUTE_ZERO = -273.15;
 
-export const Weather = () => {
-    const [weather, setWeather] = useState({ location: '', details: {} });
-    const [location, setLocation] = useState(null);
+type Location = {
+    lat: number;
+    lng: number;
+};
 
-    if (navigator.geolocation && !location) {
-        navigator.geolocation.getCurrentPosition((position) => {
+type Weather = {
+    location: string;
+    details: WeatherDetails;
+};
+
+type WeatherDetails = {
+    main: string;
+    description: string;
+    temperature: string;
+    icon: string;
+};
+
+export const WeatherWidget = () => {
+    const [weather, setWeather] = useState({} as Weather);
+    const [location, setLocation] = useState({} as Location);
+
+    if (navigator.geolocation && !location.lat && !location.lng) {
+        navigator.geolocation.getCurrentPosition(position => {
             const { latitude, longitude } = position.coords;
             setLocation({ lat: latitude, lng: longitude });
         });
     }
 
     useEffect(() => {
-        const fetchWeather = async (lat, lng) => {
+        const fetchWeather = async (lat: number, lng: number) => {
             const apiKey = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
             const baseUrl = import.meta.env.VITE_OPEN_WEATHER_API_URL;
 
@@ -23,12 +40,12 @@ export const Weather = () => {
             );
             const data = await response.json();
 
-            const tempK = parseFloat(data.main.temp, 10);
+            const tempK = parseFloat(data?.main.temp);
             const tempC = Math.round(tempK - Math.abs(ABSOLUTE_ZERO));
             setWeather({
                 location: data.name,
                 details: {
-                    title: `${tempC}°C`,
+                    main: `${tempC}°C`,
                     description: data.weather[0].description,
                     temperature: `${tempC}°C`,
                     icon: `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
@@ -46,7 +63,7 @@ export const Weather = () => {
         <section className='flex flex-col justify-end'>
             <h4 className='sr-only'>Location &amp; Weather</h4>
             {weather.location && (
-                <div className='grid grid-rows-2 grid-flow-col gap-x-1 items-center'>
+                <div className='grid items-center grid-flow-col grid-rows-2 gap-x-1'>
                     <div className='font-bold text-right'>
                         {weather.location}
                     </div>
