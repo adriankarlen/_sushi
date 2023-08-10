@@ -2,12 +2,17 @@ import bookmarks from '../data/bookmarks.json';
 
 export const Bookmarks = () => {
     return (
-        <>
+        <div
+            id='bookmarks'
+            className='flex flex-row items-start justify-around md:flex-row'>
+            <h2 className='sr-only'>Bookmarks</h2>
             {bookmarks.map(category => (
                 <ul
                     key={category.description}
                     className='flex flex-col justify-around p-0 m-0 list-none'>
-                    <li className='font-bold'>{category.description}</li>
+                    {/* <li className='font-bold'>
+                        <h4>{category.description}</h4>
+                    </li> */}
                     {category.bookmarks.map(bookmark => (
                         <li
                             key={bookmark.title}
@@ -28,6 +33,6 @@ export const Bookmarks = () => {
                     ))}
                 </ul>
             ))}
-        </>
+        </div>
     );
 };

@@ -1,6 +1,6 @@
 {
     "0": {
-        "name": "Local",
+        "name": "LocalHost",
         "searchTemplate": ":{}",
         "suggestions": ["0 8000", "0 8080"],
         "url": "http://localhost:3000"
@@ -43,5 +43,23 @@
         "searchTemplate": "/results?search_query={}",
         "suggestions": ["y/feed/trending"],
         "url": "https://youtube.com/feed/subscriptions"
+    },
+    "cr": {
+        "name": "Crunchyroll",
+        "searchTemplate": "/search?q={}",
+        "suggestions": ["cr/queue"],
+        "url": "https://www.crunchyroll.com"
+    },
+    "t": {
+        "name": "Twitch",
+        "searchTemplate": "/search?query={}",
+        "suggestions": ["t/directory/following/live"],
+        "url": "https://www.twitch.tv"
+    },
+    "x": {
+        "name": "X",
+        "searchTemplate": "/search?q={}",
+        "suggestions": ["x/explore"],
+        "url": "https://www.x.com"
     }
 }
