@@ -1,13 +1,15 @@
 {
     "0": {
         "name": "LocalHost",
-        "searchTemplate": ":{}",
+        "searchTemplateUrl": ":",
+        "searchTemplateParam": "",
         "suggestions": ["0 8000", "0 8080"],
         "url": "http://localhost:3000"
     },
     "g": {
         "name": "GitHub",
-        "searchTemplate": "/search?q={}",
+        "searchTemplateUrl": "/search?",
+        "searchTemplateParam": "q",
         "suggestions": [
             "g/trending",
             "g/adriankarlen/_sushi",
@@ -17,7 +19,8 @@
     },
     "r": {
         "name": "Reddit",
-        "searchTemplate": "/search?q={}",
+        "searchTemplateUrl": "/search?",
+        "searchTemplateParam": "q",
         "suggestions": [
             "r/r/startpages",
             "r/r/webdev",
@@ -28,37 +31,43 @@
     },
     "s": {
         "name": "Slack",
-        "searchTemplate": "",
+        "searchTemplateUrl": "",
+        "searchTemplateParam": "",
         "suggestions": ["s/client/T09M5UWSV"],
         "url": "https://app.slack.com"
     },
     "v": {
         "name": "Vercel",
-        "searchTemplate": "",
+        "searchTemplateUrl": "",
+        "searchTemplateParam": "",
         "suggestions": ["v/adriankarlen/sushi/deployments"],
         "url": "https://vercel.com/dashboard"
     },
     "y": {
         "name": "YouTube",
-        "searchTemplate": "/results?search_query={}",
+        "searchTemplateUrl": "/results?",
+        "searchTemplateParam": "search_query",
         "suggestions": ["y/feed/trending"],
         "url": "https://youtube.com/feed/subscriptions"
     },
     "cr": {
         "name": "Crunchyroll",
-        "searchTemplate": "/search?q={}",
+        "searchTemplateUrl": "/search?",
+        "searchTemplateParam": "q",
         "suggestions": ["cr/queue"],
         "url": "https://www.crunchyroll.com"
     },
     "t": {
         "name": "Twitch",
-        "searchTemplate": "/search?query={}",
+        "searchTemplateUrl": "/search?",
+        "searchTemplateParam": "query",
         "suggestions": ["t/directory/following/live"],
         "url": "https://www.twitch.tv"
     },
     "x": {
         "name": "X",
-        "searchTemplate": "/search?q={}",
+        "searchTemplateUrl": "/search?",
+        "searchTemplateParam": "q",
         "suggestions": ["x/explore"],
         "url": "https://www.x.com"
     }

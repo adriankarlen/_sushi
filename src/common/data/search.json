@@ -1,5 +1,7 @@
 {
-    "defaultSearchTemplate": "https://search.brave.com/search?q={}",
+    "defaultSearchUrl": "https://search.brave.com",
+    "defaultSearchTemplate": "/search?",
+    "defaultSearchParam": "q",
     "commandPathDelimiter": "/",
     "commandSearchDelimiter": " "
 }

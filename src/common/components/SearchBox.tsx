@@ -33,14 +33,12 @@ export const SearchBox = () => {
     const formatSearchUrl = (
         url: string,
         searchPath: string,
+        searchParam: string,
         search: string
     ) => {
         if (!searchPath) return url;
-        const [baseUrl] = splitUrl(url);
-        const params = new URLSearchParams();
-        params.set('q', search);
-        searchPath = searchPath.replace(/{}/g, params.toString());
-        return baseUrl + searchPath;
+        const params = new URLSearchParams({ [searchParam]: search });
+        return url + searchPath + params.toString();
     };
 
     const parseQuery = (q: string) => {
@@ -60,9 +58,18 @@ export const SearchBox = () => {
         const typedSearchKey = searchKey as CommandKey;
 
         if (isCommandKey(typedSearchKey)) {
-            const { searchTemplate, url: base } = commands[typedSearchKey];
+            const {
+                searchTemplateUrl,
+                searchTemplateParam,
+                url: base
+            } = commands[typedSearchKey];
             const search = rawSearch.trimStart();
-            const url = formatSearchUrl(base, searchTemplate, search);
+            const url = formatSearchUrl(
+                base,
+                searchTemplateUrl,
+                searchTemplateParam,
+                search
+            );
             return url;
         }
 
@@ -76,8 +83,14 @@ export const SearchBox = () => {
             return url;
         }
 
-        const [baseUrl, rest] = splitUrl(config.defaultSearchTemplate);
-        const url = formatSearchUrl(baseUrl, rest, q);
+        const { defaultSearchUrl, defaultSearchTemplate, defaultSearchParam } =
+            config;
+        const url = formatSearchUrl(
+            defaultSearchUrl,
+            defaultSearchTemplate,
+            defaultSearchParam,
+            q
+        );
         return url;
     };
 
@@ -97,11 +110,21 @@ export const SearchBox = () => {
         const { value } = e.target;
         useAppStore.setState({ q: value, commandKey: calcBaseCommand(value) });
     };
-
     const calcBaseCommand = (q: string) => {
-        const splitBy = config.commandPathDelimiter;
-        const [pathKey] = q.split(new RegExp(`${splitBy}(.*)`)) ?? ['', ''];
-        return commands.hasOwnProperty(pathKey) ? pathKey : '';
+        const { commandSearchDelimiter, commandPathDelimiter } = config;
+        const pathKey = (
+            q.split(new RegExp(`${commandPathDelimiter}(.*)`))[0] ?? ''
+        ).trim();
+        const searchKey = (
+            q.split(new RegExp(`${commandSearchDelimiter}(.*)`))[0] ?? ''
+        ).trim();
+        if (pathKey in commands) {
+            return pathKey;
+        } else if (searchKey in commands) {
+            return searchKey;
+        } else {
+            return '';
+        }
     };
 
     return (
