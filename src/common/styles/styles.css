@@ -2,18 +2,25 @@ body {
     font-family: var(--font-sans-serif);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-header);
 }
 
 #time {
     -webkit-text-stroke: 1px rgb(var(--ctp-red));
-	text-shadow: -5px 5px 0px rgb(var(--ctp-red)), -10px 10px rgb(var(--ctp-peach)), -15px 15px 0px rgb(var(--ctp-mauve)), -20px 20px 0px rgb(var(--ctp-green));
+    text-shadow: -5px 5px 0px rgb(var(--ctp-red)),
+        -10px 10px rgb(var(--ctp-peach)), -15px 15px 0px rgb(var(--ctp-mauve)),
+        -20px 20px 0px rgb(var(--ctp-green));
 }
 
 #dock a:focus,
 #dock a:hover {
-    animation: slime 0.75s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: slime 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,18 +32,20 @@ h1, h2, h3, h4, h5, h6 {
 @media (prefers-color-scheme: light) {
     #search input {
         background-image: var(--svg-search-light-gray);
-    } 
+    }
 }
 
-#bookmarks .category { 
+#bookmarks .category {
     font-family: var(--font-header);
 }
 
 .sr-only {
-    height: 1px;
-    left: -10000px;
-    overflow: hidden;
     position: absolute;
-    top: auto;
     width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    word-wrap: normal;
+    border: 0;
 }
