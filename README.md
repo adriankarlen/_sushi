@@ -17,6 +17,8 @@ color palette used is [Catppuccin](https://github.com/catppuccin) with the
 flavour mocha. Fonts used are [Inter](https://rsms.me/inter/) and
 [Metropolis](https://github.com/dw5/Metropolis)
 
+&nbsp;
+
 ## 🌟 Features
 
 -   **Search**: Search the web using [Brave Search](https://search.brave.com/).
@@ -25,6 +27,8 @@ flavour mocha. Fonts used are [Inter](https://rsms.me/inter/) and
 -   **Weather**: See the current weather in your city.
 -   **Tilde**: Quick access to websites using keys, including searching the
     site.
+
+&nbsp;
 
 ## 🔧 Usage
 
@@ -47,6 +51,8 @@ npm run start
 ```bash
 npm run build
 ```
+
+&nbsp;
 
 ### 👾 Configuration
 
@@ -84,10 +90,14 @@ and `url` fields. The `name` field is the name of the website, the
 `suggestions` field is the suggestions of the website, and the `url` field is
 the URL of the website.
 
+&nbsp;
+
 ### 🚀 Deploying your own version
 
 Ultimately you can deploy it however you want, but here's a basic guide on how
 to do it using [Vercel](https://vercel.com/).
+
+&nbsp;
 
 ### 📦 Vercel
 
@@ -99,6 +109,8 @@ to do it using [Vercel](https://vercel.com/).
    to set the `VITE_OPEN_WEATHER_API_URL` and the `VITE_OPENWEATHER_API_KEY`
    variable to your own OpenWeather API key for the weather widget to work.
 6. Deploy your project.
+
+&nbsp;
 
 ## 📜 License
 
