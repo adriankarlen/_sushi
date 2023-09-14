@@ -28,21 +28,21 @@ flavour mocha. Fonts used are [Inter](https://rsms.me/inter/) and
 
 ## 🔧 Usage
 
-### 👷‍♂️ Installation
+### 👷‍♂️ Commands
 
-1. Install dependencies:
+#### 💾 Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Start the development server:
+#### 🏃‍♂️ Start the development server:
 
 ```bash
 vite start
 ```
 
-3. Build the project:
+#### 🔨 Build the project:
 
 ```bash
 vite build
