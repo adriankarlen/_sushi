@@ -39,13 +39,13 @@ npm install
 #### 🏃‍♂️ Start the development server:
 
 ```bash
-vite start
+npm run start
 ```
 
 #### 🔨 Build the project:
 
 ```bash
-vite build
+npm run build
 ```
 
 ### 👾 Configuration
