@@ -1,44 +1,90 @@
-# \_sushi
+<h2 align="center">
+    <img src="https://raw.githubusercontent.com/adriankarlen/_sushi/main/misc/logo.png" width="100" alt="Logo"/>
+    <br/>
+    <img src="https://raw.githubusercontent.com/adriankarlen/_sushi/main/misc/transparent.png" height="30" width="0px"/>
+    🍣 _sushi
+    <img src="https://raw.githubusercontent.com/adriankarlen/_sushi/main/misc/transparent.png" height="30" width="0px"/>
+</h2>
 
-![_sushi](public/assets/_sushi.png?raw=true)
+**This is based on the start page
+[`_traichu`](https://github.com/Tressley/_traichu), made by
+[`Tressly`](https://github.com/Tressley)**
 
-> **\sɯɕiꜜ,** _n_. A Japanese dish made of small portions of sticky white rice flavored with vinegar, usually wrapped in seaweed and filled or topped with fish, vegetables or meat. For the vegetarians, she served cucumber **sushi**.
+This is a start page for your browser. It is built using
+[React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/),
+[Tailwind CSS](https://tailwindcss.com/), and [Vite](https://vitejs.dev/). The
+color palette used is [Catppuccin](https://github.com/catppuccin) with the
+flavour mocha. Fonts used are [Inter](https://rsms.me/inter/) and
+[Metropolis](https://github.com/dw5/Metropolis)
 
-**This is based on the start page [`_traichu`](https://github.com/Tressley/_traichu)! made by [`Tressly`](https://github.com/Tressley)**
+## 🌟 Features
 
-## Available Scripts
+-   **Search**: Search the web using [Brave Search](https://search.brave.com/).
+-   **Bookmarks**: Add your favorite websites to the bookmarks section.
+-   **Clock**: See the current time in 24-hour format.
+-   **Weather**: See the current weather in your city.
+-   **Tilde**: Quick access to websites using keys, including searching the
+    site.
 
-In the project directory, you can run:
+## 🔧 Usage
 
-### `npm start`
+### 👷‍♂️ Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Install dependencies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+2. Start the development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+vite start
+```
 
-### `npm run build`
+3. Build the project:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+vite build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 👾 Configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 🔎 Search
 
-### `npm run eject`
+The search bar uses [Brave Search](https://search.brave.com/). To change the
+search engine, go to `src\common\data\search.json` and change the `searchEngine`
+and `defaultSearchTemplate`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 📚 Bookmarks
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The bookmarks are stored in `src\common\data\bookmarks.json`. The `name` field
+is the name of the bookmark, the `url` field is the URL of the bookmark, and the
+`icon` field is the icon of the bookmark. The icon uses DuckDuckGo favicon api.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 🌈 Weather
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The weather is fetched from [OpenWeather](https://openweathermap.org/). To make
+this work you need to get an API key from OpenWeather and add it to a `.env`
+file in the root of the project. The `.env` file should look like this:
+
+```
+VITE_OPENWEATHER_API_KEY=your_api_key
+```
+
+#### 🏄 Tilde
+
+The tilde is a quick way to access websites. To add a website to the tilde, go
+to `src/common/data/commands.json` and add a new object to the object. The key
+of the object is the key you press to access the website, and the value is an
+object with the `name`, `searchTemplate`, `searchTemplateParam`, `suggestions`
+and `url` fields. The `name` field is the name of the website, the
+`searchTemplate` field is the search template of the website, the
+`searchTemplateParam` field is the search template parameter of the website, the
+`suggestions` field is the suggestions of the website, and the `url` field is
+the URL of the website.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the
+[LICENSE](https://github.com/adriankarlen/_sushi/blob/main/LICENSE) file
