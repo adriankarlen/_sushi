@@ -3,8 +3,8 @@
         "name": "LocalHost",
         "searchTemplateUrl": ":",
         "searchTemplateParam": "",
-        "suggestions": ["0 8000", "0 8080"],
-        "url": "http://localhost:3000"
+        "suggestions": ["0 3000", "0 5173", "0 8000", "0 8080"],
+        "url": "http://localhost"
     },
     "g": {
         "name": "GitHub",
@@ -33,7 +33,7 @@
         "name": "Slack",
         "searchTemplateUrl": "",
         "searchTemplateParam": "",
-        "suggestions": ["s/client/T09M5UWSV"],
+        "suggestions": [""],
         "url": "https://app.slack.com"
     },
     "v": {
@@ -41,14 +41,18 @@
         "searchTemplateUrl": "",
         "searchTemplateParam": "",
         "suggestions": ["v/adriankarlen/sushi/deployments"],
-        "url": "https://vercel.com/dashboard"
+        "url": "https://vercel.com"
     },
     "y": {
         "name": "YouTube",
         "searchTemplateUrl": "/results?",
         "searchTemplateParam": "search_query",
-        "suggestions": ["y/feed/trending"],
-        "url": "https://youtube.com/feed/subscriptions"
+        "suggestions": [
+            "y/feed/trending",
+            "y/feed/subscriptions",
+            "y/feed/history"
+        ],
+        "url": "https://youtube.com"
     },
     "cr": {
         "name": "Crunchyroll",
