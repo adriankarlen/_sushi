@@ -1,5 +1,5 @@
 <h2 align="center">
-    <img src="https://raw.githubusercontent.com/adriankarlen/_sushi/main/misc/logo.png" width="100" alt="Logo"/>
+    <img src="https://raw.githubusercontent.com/adriankarlen/_sushi/main/misc/logo.png" width="200" alt="Logo"/>
     <br/>
     <img src="https://raw.githubusercontent.com/adriankarlen/_sushi/main/misc/transparent.png" height="30" width="0px"/>
     🍣 _sushi
