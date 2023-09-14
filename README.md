@@ -72,7 +72,7 @@ file in the root of the project. The `.env` file should look like this:
 VITE_OPENWEATHER_API_KEY=your_api_key
 ```
 
-#### 🏄 Tilde
+#### 〰️ Tilde
 
 The tilde is a quick way to access websites. To add a website to the tilde, go
 to `src/common/data/commands.json` and add a new object to the object. The key
