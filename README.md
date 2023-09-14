@@ -97,9 +97,7 @@ the URL of the website.
 Ultimately you can deploy it however you want, but here's a basic guide on how
 to do it using [Vercel](https://vercel.com/).
 
-&nbsp;
-
-### 📦 Vercel
+#### 📦 Vercel
 
 1. Fork this repository
 2. Customize it to your liking.
