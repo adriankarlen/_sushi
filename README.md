@@ -84,6 +84,22 @@ and `url` fields. The `name` field is the name of the website, the
 `suggestions` field is the suggestions of the website, and the `url` field is
 the URL of the website.
 
+### 🚀 Deploying your own version
+
+Ultimately you can deploy it however you want, but here's a basic guide on how
+to do it using [Vercel](https://vercel.com/).
+
+### 📦 Vercel
+
+1. Fork this repository
+2. Customize it to your liking.
+3. Create a new project on [Vercel](https://vercel.com/).
+4. Import your forked repository.
+5. Configure the environment variables in Vercel to match your needs. You need
+   to set the `VITE_OPEN_WEATHER_API_URL` and the `VITE_OPENWEATHER_API_KEY`
+   variable to your own OpenWeather API key for the weather widget to work.
+6. Deploy your project.
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the
