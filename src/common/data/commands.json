@@ -33,7 +33,7 @@
         "name": "Slack",
         "searchTemplateUrl": "",
         "searchTemplateParam": "",
-        "suggestions": [""],
+        "suggestions": [],
         "url": "https://app.slack.com"
     },
     "v": {
