@@ -2,6 +2,11 @@ body {
     font-family: var(--font-sans-serif);
 }
 
+::selection {
+    background-color: rgb(var(--ctp-blue));
+    color: rgb(var(--ctp-text));
+}
+
 h1,
 h2,
 h3,
