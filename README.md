@@ -120,5 +120,5 @@ This project is licensed under the MIT License - see the
 ## 📚 Attributions
 
 -   [Logo](https://www.freepik.com/free-vector/cute-cat-sushi-salmon-cartoon-vector-illustration_11056477.htm#query=sushi%20cat&position=16&from_view=keyword&track=ais)
-    made by [@catalyststuff](https://www.freepik.com/author/catalyststuff)
-    accessed from [Freepik](https://www.freepik.com/) with some custom colors.
+    made by [catalyststuff](https://www.freepik.com/author/catalyststuff)
+    accessed via [Freepik](https://www.freepik.com/), with custom colors.
