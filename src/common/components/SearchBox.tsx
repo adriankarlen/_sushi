@@ -54,7 +54,9 @@ export const SearchBox = () => {
             return commands[commandKey].url;
         }
 
-        const [searchKey, rawSearch] = q.split(config.commandSearchDelimiter);
+        const [searchKey, ...rawSearch] = q.split(
+            config.commandSearchDelimiter
+        );
         const typedSearchKey = searchKey as CommandKey;
 
         if (isCommandKey(typedSearchKey)) {
@@ -63,7 +65,8 @@ export const SearchBox = () => {
                 searchTemplateParam,
                 url: base
             } = commands[typedSearchKey];
-            const search = rawSearch.trimStart();
+            // handle multiple occurrences of commandSearchDelimiter
+            const search = rawSearch.join(config.commandSearchDelimiter).trim();
             const url = formatSearchUrl(
                 base,
                 searchTemplateUrl,
@@ -73,7 +76,9 @@ export const SearchBox = () => {
             return url;
         }
 
-        const [pathKey, path] = q.split(config.commandPathDelimiter);
+        const [pathKey, ...rest] = q.split(config.commandPathDelimiter);
+        // handle multiple occurrences of commandPathDelimiter
+        const path = rest.join(config.commandPathDelimiter).trim();
         const typedPathKey = pathKey as CommandKey;
 
         if (isCommandKey(typedPathKey)) {
