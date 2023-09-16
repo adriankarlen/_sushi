@@ -25,8 +25,8 @@ flavour mocha. Fonts used are [Inter](https://rsms.me/inter/) and
 -   **Bookmarks**: Add your favorite websites to the bookmarks section.
 -   **Clock**: See the current time in 24-hour format.
 -   **Weather**: See the current weather in your city.
--   **Tilde**: Quick access to websites using keys, including searching the
-    site.
+-   **Tilde**: Implementation of the [Tilde](https://github.com/xvvvyz/tilde)
+    search bar.
 
 &nbsp;
 
