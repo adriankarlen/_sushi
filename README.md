@@ -114,3 +114,11 @@ to do it using [Vercel](https://vercel.com/).
 
 This project is licensed under the MIT License - see the
 [LICENSE](https://github.com/adriankarlen/_sushi/blob/main/LICENSE) file
+
+&nbsp;
+
+## 📚 Attributions
+
+-   [Logo](https://www.freepik.com/free-vector/cute-cat-sushi-salmon-cartoon-vector-illustration_11056477.htm#query=sushi%20cat&position=16&from_view=keyword&track=ais)
+    made by [@catalyststuff](https://www.freepik.com/author/catalyststuff)
+    accessed from [Freepik](https://www.freepik.com/) with some custom colors.
