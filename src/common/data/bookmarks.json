@@ -11,9 +11,9 @@
             },
             {
                 "id": 2,
-                "title": "Slashdot",
-                "url": "https://slashdot.org/",
-                "image": "https://icons.duckduckgo.com/ip3/slashdot.org.ico"
+                "title": "Substack",
+                "url": "https://substack.com",
+                "image": "https://icons.duckduckgo.com/ip3/substack.com.ico"
             },
             {
                 "id": 3,
@@ -41,8 +41,8 @@
             },
             {
                 "id": 2,
-                "title": "Twitter",
-                "url": "https://twitter.com/",
+                "title": "X",
+                "url": "https://x.com/",
                 "image": "https://icons.duckduckgo.com/ip3/x.com.ico"
             },
             {
