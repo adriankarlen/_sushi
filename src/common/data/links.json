@@ -18,7 +18,7 @@
     },
     {
         "title": "Figma",
-        "url": "https://www.figma.com/files/recent?fui102345597200000000",
+        "url": "https://www.figma.com/files/recents-and-sharing",
         "paths": [
             "M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0",
             "M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z",
@@ -34,7 +34,7 @@
     },
     {
         "title": "Notion",
-        "url": "https://www.notion.so/my-workspace",
+        "url": "https://www.notion.so/",
         "paths": [
             "M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z",
             "M7 7h3l6 6",
@@ -46,7 +46,7 @@
     },
     {
         "title": "Slack",
-        "url": "https://app.slack.com/client/T01B4QZQZ9K/C01B4QZQZ9L",
+        "url": "https://app.slack.com/",
         "paths": [
             "M12 12v-6a2 2 0 0 1 4 0v6m0 -2a2 2 0 1 1 2 2h-6",
             "M12 12h6a2 2 0 0 1 0 4h-6m2 0a2 2 0 1 1 -2 2v-6",
