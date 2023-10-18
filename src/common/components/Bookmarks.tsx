@@ -21,7 +21,7 @@ export const Bookmarks = () => {
                                 href={bookmark.url}
                                 target='_self'
                                 rel='noopener noreferrer'
-                                className='flex items-center p-2 font-medium no-underline rounded-md outline-none text-ctp-surface2 hover:text-ctp-surface2 hover:bg-ctp-surface0 focus:text-ctp-surface2 focus:bg-ctp-surface1'>
+                                className='flex items-center p-2 font-medium no-underline rounded-md outline-none text-rp-highlightHigh hover:text-rp-highlightHigh hover:bg-rp-overlay focus:text-rp-highlightHigh focus:bg-rp-highlightMed'>
                                 <img
                                     src={bookmark.image}
                                     alt={`${bookmark.title} favicon`}

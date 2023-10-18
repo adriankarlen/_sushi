@@ -141,7 +141,7 @@ export const SearchBox = () => {
                 autoFocus
                 onChange={handleInputChange}
                 autoComplete='off'
-                className='p-4 w-full bg-transparent bg-[right_1.25rem_center] bg-no-repeat bg-[length:1.5rem_1.5rem] rounded-full border-2 border-ctp-surface2 focus:outline focus:outline-4 focus:outline-ctp-red/25 focus:bg-ctp-surface0/25 focus:border-ctp-red hover:border-ctp-overlay0'
+                className='p-4 w-full bg-rp-surface bg-[right_1.25rem_center] bg-no-repeat bg-[length:1.5rem_1.5rem] rounded-full border-2 border-rp-highlightHigh focus:outline focus:outline-4 focus:outline-rp-love/25 focus:bg-rp-highlightLow/25 focus:border-rp-love hover:border-rp-overlay'
             />
             <button className='sr-only' tabIndex={-1}>
                 Search

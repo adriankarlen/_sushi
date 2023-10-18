@@ -18,7 +18,9 @@ export const Clock = () => {
     return (
         <section id='clock'>
             <h1 className='sr-only'>Clock</h1>
-            <h1 id='time' className='font-black text-9xl text-ctp-mocha-text'>
+            <h1
+                id='time'
+                className='font-black text-9xl dark:text-rp-text text-rp-base'>
                 {time.toLocaleTimeString(
                     config.timeFormat,
                     config.timeOptions as Intl.DateTimeFormatOptions

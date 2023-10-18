@@ -69,7 +69,7 @@ export const WeatherWidget = () => {
                     </div>
                     <p
                         title={weather.details.main}
-                        className='flex items-center capitalize text-ctp-surface2'>
+                        className='flex items-center capitalize text-rp-highlightHigh'>
                         <img
                             src={weather.details.icon}
                             alt='weather-icon'
