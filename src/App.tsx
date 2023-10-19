@@ -1,3 +1,4 @@
+import { IconAdjustmentsCog } from '@tabler/icons-react';
 import {
     Bookmarks,
     Clock,
@@ -13,7 +14,7 @@ function App() {
     const command = useAppStore(state => state.commandKey);
     return (
         <div className='min-h-screen App mocha'>
-            <main className='flex flex-col items-center justify-center min-h-screen bg-ctp-base text-ctp-text'>
+            <main className='flex flex-col items-center justify-center min-h-screen bg-rp-base text-rp-text'>
                 <header className='absolute top-0 flex-row justify-center hidden w-full p-4 animate-fade md:flex'>
                     <DateTimeWidget />
                     <WeatherWidget />
@@ -33,6 +34,12 @@ function App() {
                     <section className='h-48'>
                         {command ? <Commands /> : <Bookmarks />}
                     </section>
+                    <button className='fixed bottom-4 right-4'>
+                        <IconAdjustmentsCog
+                            size={32}
+                            className='text-rp-highlightHigh stroke-opacity-50 hover:text-rp-gold'
+                        />
+                    </button>
                 </section>
             </main>
         </div>

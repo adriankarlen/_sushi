@@ -3,8 +3,8 @@ body {
 }
 
 ::selection {
-    background-color: rgb(var(--ctp-blue));
-    color: rgb(var(--ctp-text));
+    background-color: hsl(var(--rp-foam));
+    color: hsl(var(--rp-text));
 }
 
 h1,
@@ -17,10 +17,10 @@ h6 {
 }
 
 #time {
-    -webkit-text-stroke: 1px rgb(var(--ctp-red));
-    text-shadow: -5px 5px 0px rgb(var(--ctp-red)),
-        -10px 10px rgb(var(--ctp-peach)), -15px 15px 0px rgb(var(--ctp-mauve)),
-        -20px 20px 0px rgb(var(--ctp-green));
+    -webkit-text-stroke: 1px hsl(var(--rp-love));
+    text-shadow: -5px 5px 0px hsl(var(--rp-love)),
+        -10px 10px hsl(var(--rp-gold)), -15px 15px 0px hsl(var(--rp-iris)),
+        -20px 20px 0px hsl(var(--rp-pine));
 }
 
 #dock a:focus,
@@ -28,16 +28,8 @@ h6 {
     animation: slime 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
-@media (prefers-color-scheme: dark) {
-    #search input {
-        background-image: var(--svg-search-gray);
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    #search input {
-        background-image: var(--svg-search-light-gray);
-    }
+#search input {
+    background-image: var(--svg-search);
 }
 
 #bookmarks .category {

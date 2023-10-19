@@ -28,7 +28,7 @@ export const Commands = () => {
                 <a
                     key={suggestion}
                     href={formatCommandUrl(suggestion)}
-                    className='flex flex-col p-2 m-2 text-center rounded-xl bg-ctp-surface0 focus-visible:outline-none focus-visible:bg-ctp-surface2 hover:bg-ctp-surface1 focus:bg-ctp-surface2'>
+                    className='flex flex-col p-2 m-2 text-center rounded-xl bg-rp-highlightLow focus-visible:outline-none focus-visible:bg-rp-highlightHigh hover:bg-rp-highlightMed focus:bg-rp-highlightHigh'>
                     <span>{suggestion}</span>
                 </a>
             );

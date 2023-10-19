@@ -1,9 +1,49 @@
 :root {
     /* Font-families */
-    --font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    --font-header: "Metropolis", sans-serif;
+    --font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --font-header: 'Metropolis', sans-serif;
 
     /* SVGs */
-    --svg-search-gray: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iIzkwOGNhYSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgPHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIj48L3BhdGg+CiAgIDxwYXRoIGQ9Ik0xMCAxMG0tNyAwYTcgNyAwIDEgMCAxNCAwYTcgNyAwIDEgMCAtMTQgMCI+PC9wYXRoPgogICA8cGF0aCBkPSJNMjEgMjFsLTYgLTYiPjwvcGF0aD4KPC9zdmc+');
-    --svg-search-light-gray: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iIzc5NzU5MyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgPHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIj48L3BhdGg+CiAgIDxwYXRoIGQ9Ik0xMCAxMG0tNyAwYTcgNyAwIDEgMCAxNCAwYTcgNyAwIDEgMCAtMTQgMCI+PC9wYXRoPgogICA8cGF0aCBkPSJNMjEgMjFsLTYgLTYiPjwvcGF0aD4KPC9zdmc+');
+    --svg-search: url('/misc/search-light.svg');
+
+    /* Colors */
+    --rp-base: 32deg 57% 95%;
+    --rp-surface: 35deg 100% 98%;
+    --rp-overlay: 33deg 43% 91%;
+    --rp-muted: 257deg 9% 61%;
+    --rp-subtle: 248deg 12% 52%;
+    --rp-text: 248deg 19% 40%;
+    --rp-love: 343deg 35% 55%;
+    --rp-gold: 35deg 81% 56%;
+    --rp-rose: 3deg 53% 67%;
+    --rp-pine: 197deg 53% 34%;
+    --rp-foam: 189deg 30% 48%;
+    --rp-iris: 268deg 21% 57%;
+    --rp-highlightLow: 25deg 35% 93%;
+    --rp-highlightMed: 10deg 9% 86%;
+    --rp-highlightHigh: 315deg 4% 80%;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* SVGs */
+        --svg-search: url('/misc/search-dark.svg');
+        /* Colors */
+        --rp-base: 249deg 22% 12%;
+        --rp-surface: 247deg 23% 15%;
+        --rp-overlay: 248deg 25% 18%;
+        --rp-muted: 249deg 12% 47%;
+        --rp-subtle: 248deg 15% 61%;
+        --rp-text: 245deg 50% 91%;
+        --rp-love: 343deg 76% 68%;
+        --rp-gold: 35deg 88% 72%;
+        --rp-rose: 2deg 55% 83%;
+        --rp-pine: 197deg 49% 38%;
+        --rp-foam: 189deg 43% 73%;
+        --rp-iris: 267deg 57% 78%;
+        --rp-highlightLow: 244deg 18% 15%;
+        --rp-highlightMed: 249deg 15% 28%;
+        --rp-highlightHigh: 248deg 13% 36%;
+    }
 }
