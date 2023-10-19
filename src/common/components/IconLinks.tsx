@@ -2,13 +2,13 @@ import links from '../data/links.json';
 
 export const IconLinks = () => {
     const colorMap = [
-        'stroke-rp-love focus:stroke-rp-love/25',
-        'stroke-rp-gold focus:stroke-rp-gold/25',
-        'stroke-rp-rose focus:stroke-rp-rose/25',
-        'stroke-rp-pine focus:stroke-rp-pine/25',
-        'stroke-rp-foam focus:stroke-rp-foam/25',
-        'stroke-rp-iris focus:stroke-rp-iris/25',
-        'stroke-rp-text focus:stroke-rp-text/25'
+        'stroke-rp-love',
+        'stroke-rp-gold',
+        'stroke-rp-rose',
+        'stroke-rp-pine',
+        'stroke-rp-foam',
+        'stroke-rp-iris',
+        'stroke-rp-text'
     ];
 
     return (
@@ -19,7 +19,7 @@ export const IconLinks = () => {
                         href={link.url}
                         target='_self'
                         rel='noopener noreferrer'
-                        className={`block transition-fill duration-125 ease-in-out ${colorMap[index]} focus:outline-none`}>
+                        className={`block transition-fill duration-125 ease-in-out ${colorMap[index]} focus:outline-none focus:opacity-50`}>
                         <svg
                             className='h-6'
                             role='img'
@@ -34,7 +34,7 @@ export const IconLinks = () => {
                             preserveAspectRatio='xMidYMid meet'>
                             <title>{link.title}</title>
                             {link.paths.map(path => (
-                                <path key={path} d={path} />
+                                <path d={path} key={path} />
                             ))}
                         </svg>
                     </a>
