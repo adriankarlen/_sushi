@@ -3,8 +3,8 @@ body {
 }
 
 ::selection {
-    background-color: hsl(var(--rp-foam));
-    color: hsl(var(--rp-text));
+    background-color: hsl(var(--rp-rose));
+    color: hsl(var(--rp-base));
 }
 
 h1,

@@ -9,24 +9,16 @@ export const Bookmarks = () => {
             {bookmarks.map(category => (
                 <ul
                     key={category.description}
-                    className='flex flex-col justify-around p-0 m-0 list-none'>
-                    {/* <li className='font-bold'>
-                        <h4>{category.description}</h4>
-                    </li> */}
+                    className='flex flex-col justify-around w-full px-2 first-of-type:pr-2 first-of-type:pl-0 last-of-type:pr-0 last-of-type:pl-2'>
                     {category.bookmarks.map(bookmark => (
                         <li
                             key={bookmark.title}
-                            className='flex flex-row items-center mb-1 leading-4'>
+                            className='flex flex-row items-center justify-center mb-4 leading-4 rounded-full bg-rp-overlay hover:bg-rp-highlightMed focus:bg-rp-highlightHigh'>
                             <a
                                 href={bookmark.url}
                                 target='_self'
                                 rel='noopener noreferrer'
-                                className='flex items-center p-2 font-medium no-underline rounded-md outline-none text-rp-highlightHigh hover:text-rp-highlightHigh hover:bg-rp-overlay focus:text-rp-highlightHigh focus:bg-rp-highlightMed'>
-                                <img
-                                    src={bookmark.image}
-                                    alt={`${bookmark.title} favicon`}
-                                    className='h-4 mr-2'
-                                />
+                                className='flex justify-center w-full p-2 font-medium no-underline outline-none text-rp-muted hover:text-rp-subtle focus:text-rp-text'>
                                 {bookmark.title}
                             </a>
                         </li>

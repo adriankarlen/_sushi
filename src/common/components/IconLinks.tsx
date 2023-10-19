@@ -2,13 +2,13 @@ import links from '../data/links.json';
 
 export const IconLinks = () => {
     const colorMap = [
-        'hover:stroke-rp-love focus:stroke-rp-love/25',
-        'hover:stroke-rp-gold focus:stroke-rp-gold/25',
-        'hover:stroke-rp-rose focus:stroke-rp-rose/25',
-        'hover:stroke-rp-pine focus:stroke-rp-pine/25',
-        'hover:stroke-rp-foam focus:stroke-rp-foam/25',
-        'hover:stroke-rp-iris focus:stroke-rp-iris/25',
-        'hover:stroke-rp-text focus:stroke-rp-text/25'
+        'stroke-rp-love focus:stroke-rp-love/25',
+        'stroke-rp-gold focus:stroke-rp-gold/25',
+        'stroke-rp-rose focus:stroke-rp-rose/25',
+        'stroke-rp-pine focus:stroke-rp-pine/25',
+        'stroke-rp-foam focus:stroke-rp-foam/25',
+        'stroke-rp-iris focus:stroke-rp-iris/25',
+        'stroke-rp-text focus:stroke-rp-text/25'
     ];
 
     return (
@@ -19,7 +19,7 @@ export const IconLinks = () => {
                         href={link.url}
                         target='_self'
                         rel='noopener noreferrer'
-                        className={`block stroke-rp-highlightHigh transition-fill duration-125 ease-in-out ${colorMap[index]} focus:outline-none`}>
+                        className={`block transition-fill duration-125 ease-in-out ${colorMap[index]} focus:outline-none`}>
                         <svg
                             className='h-6'
                             role='img'

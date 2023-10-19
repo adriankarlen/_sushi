@@ -34,12 +34,6 @@ function App() {
                     <section className='h-48'>
                         {command ? <Commands /> : <Bookmarks />}
                     </section>
-                    <button className='fixed bottom-4 right-4'>
-                        <IconAdjustmentsCog
-                            size={32}
-                            className='text-rp-highlightHigh stroke-opacity-50 hover:text-rp-gold'
-                        />
-                    </button>
                 </section>
             </main>
         </div>
