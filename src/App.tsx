@@ -1,4 +1,3 @@
-import { IconAdjustmentsCog } from '@tabler/icons-react';
 import {
     Bookmarks,
     Clock,
