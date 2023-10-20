@@ -21,7 +21,7 @@ export const Bookmarks = () => {
                     {category.bookmarks.map(bookmark => (
                         <li
                             key={bookmark.title}
-                            className={`flex flex-row items-center justify-center mb-1 leading-4 border-2 border-rp-overlay rounded-sm bg-rp-surface hover:bg-rp-overlay focus:bg-rp-highlightMed ${rounded(
+                            className={`flex flex-row items-center justify-center mb-1 leading-4 border-2 border-rp-overlay rounded-sm bg-rp-surface hover:border-rp-rose/75 hover:bg-rp-overlay focus:border-rp-love/75 ${rounded(
                                 index,
                                 bookmarks.length
                             )}`}>
