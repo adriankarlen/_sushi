@@ -28,7 +28,7 @@ export const Commands = () => {
                 <a
                     key={suggestion}
                     href={formatCommandUrl(suggestion)}
-                    className='flex flex-col px-6 py-2 m-2 font-medium text-center rounded-xl bg-rp-overlay text-rp-muted hover:text-rp-subtle focus-visible:outline-none focus-visible:bg-rp-highlightHigh hover:bg-rp-highlightMed focus:bg-rp-highlightHigh'>
+                    className='flex flex-col px-6 py-2 m-2 font-medium text-center border-2 rounded-full bg-rp-surface border-rp-overlay text-rp-muted hover:text-rp-rose hover:bg-rp-overlay hover:border-rp-rose/75 focus-visible:outline-none focus-visible:text-rp-love focus:text-rp-love'>
                     <span>{suggestion}</span>
                 </a>
             );
