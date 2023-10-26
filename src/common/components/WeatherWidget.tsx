@@ -35,11 +35,19 @@ export const WeatherWidget = () => {
             const apiKey = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
             const baseUrl = import.meta.env.VITE_OPEN_WEATHER_API_URL;
 
+            if (!apiKey || !baseUrl || !lng || !lat) {
+                console.error(
+                    'Environment variables for OpenWeather API are not set.'
+                );
+                return;
+            }
+
             const response = await fetch(
                 `${baseUrl}?lat=${lat}&lon=${lng}&appid=${apiKey}`
             );
             const data = await response.json();
 
+            if (!data?.main) return;
             const tempK = parseFloat(data?.main.temp);
             const tempC = Math.round(tempK - Math.abs(ABSOLUTE_ZERO));
             setWeather({
@@ -55,7 +63,10 @@ export const WeatherWidget = () => {
 
         if (location) {
             const { lat, lng } = location;
-            fetchWeather(lat, lng);
+            fetchWeather(
+                lat ?? import.meta.env.VITE_OPEN_WEATHER_API_DEFAULT_LAT,
+                lng ?? import.meta.env.VITE_OPEN_WEATHER_API_DEFAULT_LNG
+            );
         }
     }, [location]);
 
