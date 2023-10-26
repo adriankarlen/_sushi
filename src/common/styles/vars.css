@@ -5,7 +5,7 @@
     --font-header: 'Metropolis', sans-serif;
 
     /* SVGs */
-    --svg-search: url('/misc/search-light.svg');
+    --svg-search: url('/misc/logo-outline.svg');
 
     /* Colors */
     --rp-base: 32deg 57% 95%;
@@ -28,7 +28,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* SVGs */
-        --svg-search: url('/misc/search-dark.svg');
+        --svg-search: url('/misc/logo-outline-dark.svg');
         /* Colors */
         --rp-base: 249deg 22% 12%;
         --rp-surface: 247deg 23% 15%;
