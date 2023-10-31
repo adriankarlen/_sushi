@@ -13,8 +13,8 @@
 This is a start page for your browser. It is built using
 [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/),
 [Tailwind CSS](https://tailwindcss.com/), and [Vite](https://vitejs.dev/). The
-color palette used is [Rosé Pine](https://rosepinetheme.com) with the flavour
-mocha. Fonts used are [Inter](https://rsms.me/inter/) and
+color palette used is [Rosé Pine](https://rosepinetheme.com). 
+Fonts used are [Inter](https://rsms.me/inter/) and
 [Metropolis](https://github.com/dw5/Metropolis)
 
 &nbsp;
