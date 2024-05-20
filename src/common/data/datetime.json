@@ -1,14 +1,14 @@
 {
-    "lang": "en",
-    "timeFormat": "sv-SE",
-    "dateOptions": {
-        "weekday": "long",
-        "year": "numeric",
-        "month": "long",
-        "day": "numeric"
-    },
-    "timeOptions": {
-        "hour": "2-digit",
-        "minute": "2-digit"
-    }
+  "lang": "en",
+  "timeFormat": "sv-SE",
+  "dateOptions": {
+    "weekday": "long",
+    "year": "numeric",
+    "month": "long",
+    "day": "numeric"
+  },
+  "timeOptions": {
+    "hour": "2-digit",
+    "minute": "2-digit"
+  }
 }

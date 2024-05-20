@@ -1,78 +1,74 @@
 {
-    "0": {
-        "name": "LocalHost",
-        "searchTemplateUrl": ":",
-        "searchTemplateParam": "",
-        "suggestions": ["0 3000", "0 5173", "0 8000", "0 8080"],
-        "url": "http://localhost"
-    },
-    "g": {
-        "name": "GitHub",
-        "searchTemplateUrl": "/search?",
-        "searchTemplateParam": "q",
-        "suggestions": [
-            "g/trending",
-            "g/adriankarlen/_sushi",
-            "gist.github.com"
-        ],
-        "url": "https://github.com"
-    },
-    "r": {
-        "name": "Reddit",
-        "searchTemplateUrl": "/search?",
-        "searchTemplateParam": "q",
-        "suggestions": [
-            "r/r/startpages",
-            "r/r/webdev",
-            "r/r/react",
-            "r/r/firefoxcss"
-        ],
-        "url": "https://www.reddit.com"
-    },
-    "s": {
-        "name": "Slack",
-        "searchTemplateUrl": "",
-        "searchTemplateParam": "",
-        "suggestions": [],
-        "url": "https://app.slack.com"
-    },
-    "v": {
-        "name": "Vercel",
-        "searchTemplateUrl": "",
-        "searchTemplateParam": "",
-        "suggestions": ["v/adriankarlen/sushi/deployments"],
-        "url": "https://vercel.com"
-    },
-    "y": {
-        "name": "YouTube",
-        "searchTemplateUrl": "/results?",
-        "searchTemplateParam": "search_query",
-        "suggestions": [
-            "y/feed/trending",
-            "y/feed/subscriptions",
-            "y/feed/history"
-        ],
-        "url": "https://youtube.com"
-    },
-    "cr": {
-        "name": "Crunchyroll",
-        "searchTemplateUrl": "/search?",
-        "searchTemplateParam": "q",
-        "suggestions": ["cr/queue"],
-        "url": "https://www.crunchyroll.com"
-    },
-    "t": {
-        "name": "Twitch",
-        "searchTemplateUrl": "/search?",
-        "searchTemplateParam": "query",
-        "suggestions": ["t/directory/following/live"],
-        "url": "https://www.twitch.tv"
-    },
-    "x": {
-        "name": "X",
-        "searchTemplateUrl": "/search?",
-        "searchTemplateParam": "q",
-        "suggestions": ["x/explore"],
-        "url": "https://www.x.com"
-    }
+  "0": {
+    "name": "LocalHost",
+    "searchTemplateUrl": ":",
+    "searchTemplateParam": "",
+    "suggestions": ["0 3000", "0 5173", "0 8000", "0 8080"],
+    "url": "http://localhost"
+  },
+  "g": {
+    "name": "GitHub",
+    "searchTemplateUrl": "/search?",
+    "searchTemplateParam": "q",
+    "suggestions": ["g/trending", "g/adriankarlen/_sushi", "gist.github.com"],
+    "url": "https://github.com"
+  },
+  "r": {
+    "name": "Reddit",
+    "searchTemplateUrl": "/search?",
+    "searchTemplateParam": "q",
+    "suggestions": [
+      "r/r/startpages",
+      "r/r/webdev",
+      "r/r/react",
+      "r/r/firefoxcss"
+    ],
+    "url": "https://www.reddit.com"
+  },
+  "s": {
+    "name": "Slack",
+    "searchTemplateUrl": "",
+    "searchTemplateParam": "",
+    "suggestions": [],
+    "url": "https://app.slack.com"
+  },
+  "v": {
+    "name": "Vercel",
+    "searchTemplateUrl": "",
+    "searchTemplateParam": "",
+    "suggestions": ["v/adriankarlen/sushi/deployments"],
+    "url": "https://vercel.com"
+  },
+  "y": {
+    "name": "YouTube",
+    "searchTemplateUrl": "/results?",
+    "searchTemplateParam": "search_query",
+    "suggestions": [
+      "y/feed/trending",
+      "y/feed/subscriptions",
+      "y/feed/history"
+    ],
+    "url": "https://youtube.com"
+  },
+  "cr": {
+    "name": "Crunchyroll",
+    "searchTemplateUrl": "/search?",
+    "searchTemplateParam": "q",
+    "suggestions": ["cr/queue"],
+    "url": "https://www.crunchyroll.com"
+  },
+  "t": {
+    "name": "Twitch",
+    "searchTemplateUrl": "/search?",
+    "searchTemplateParam": "query",
+    "suggestions": ["t/directory/following/live"],
+    "url": "https://www.twitch.tv"
+  },
+  "x": {
+    "name": "X",
+    "searchTemplateUrl": "/search?",
+    "searchTemplateParam": "q",
+    "suggestions": ["x/explore"],
+    "url": "https://www.x.com"
+  }
 }

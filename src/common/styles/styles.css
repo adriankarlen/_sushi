@@ -1,10 +1,10 @@
 body {
-    font-family: var(--font-sans-serif);
+  font-family: var(--font-sans-serif);
 }
 
 ::selection {
-    background-color: hsl(var(--rp-rose));
-    color: hsl(var(--rp-base));
+  background-color: hsl(var(--rp-rose));
+  color: hsl(var(--rp-base));
 }
 
 h1,
@@ -13,36 +13,38 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-header);
+  font-family: var(--font-header);
 }
 
 #time {
-    -webkit-text-stroke: 1px hsl(var(--rp-love));
-    text-shadow: -5px 5px 0px hsl(var(--rp-love)),
-        -10px 10px hsl(var(--rp-gold)), -15px 15px 0px hsl(var(--rp-iris)),
-        -20px 20px 0px hsl(var(--rp-pine));
+  -webkit-text-stroke: 1px hsl(var(--rp-love));
+  text-shadow:
+    -5px 5px 0px hsl(var(--rp-love)),
+    -10px 10px hsl(var(--rp-gold)),
+    -15px 15px 0px hsl(var(--rp-iris)),
+    -20px 20px 0px hsl(var(--rp-pine));
 }
 
 #dock a:focus,
 #dock a:hover {
-    animation: slime 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: slime 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 #search input {
-    background-image: var(--svg-search);
+  background-image: var(--svg-search);
 }
 
 #bookmarks .category {
-    font-family: var(--font-header);
+  font-family: var(--font-header);
 }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    word-wrap: normal;
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  word-wrap: normal;
+  border: 0;
 }

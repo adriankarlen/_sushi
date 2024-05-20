@@ -1,14 +1,14 @@
-import { create } from 'zustand';
-import { devtools } from 'zustand/middleware';
+import { create } from "zustand";
+import { devtools } from "zustand/middleware";
 
 export interface AppState {
-    q: string;
-    commandKey: string;
+  q: string;
+  commandKey: string;
 }
 
 export const useAppStore = create<AppState>()(
-    devtools(set => ({
-        q: '',
-        commandKey: ''
-    }))
+  devtools(set => ({
+    q: "",
+    commandKey: ""
+  }))
 );

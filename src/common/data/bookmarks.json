@@ -1,122 +1,122 @@
 [
-    {
+  {
+    "id": 1,
+    "description": "News",
+    "bookmarks": [
+      {
         "id": 1,
-        "description": "News",
-        "bookmarks": [
-            {
-                "id": 1,
-                "title": "HackerNews",
-                "url": "https://news.ycombinator.com/",
-                "image": "https://icons.duckduckgo.com/ip3/news.ycombinator.com.ico"
-            },
-            {
-                "id": 2,
-                "title": "Substack",
-                "url": "https://substack.com",
-                "image": "https://icons.duckduckgo.com/ip3/substack.com.ico"
-            },
-            {
-                "id": 3,
-                "title": "Omni",
-                "url": "https://omni.se/",
-                "image": "https://icons.duckduckgo.com/ip3/omni.se.ico"
-            },
-            {
-                "id": 4,
-                "title": "Reddit",
-                "url": "https://www.reddit.com/",
-                "image": "https://icons.duckduckgo.com/ip3/reddit.com.ico"
-            }
-        ]
-    },
-    {
+        "title": "HackerNews",
+        "url": "https://news.ycombinator.com/",
+        "image": "https://icons.duckduckgo.com/ip3/news.ycombinator.com.ico"
+      },
+      {
         "id": 2,
-        "description": "Social",
-        "bookmarks": [
-            {
-                "id": 1,
-                "title": "Facebook",
-                "url": "https://www.facebook.com/",
-                "image": "https://icons.duckduckgo.com/ip3/www.facebook.com.ico"
-            },
-            {
-                "id": 2,
-                "title": "X",
-                "url": "https://x.com/",
-                "image": "https://icons.duckduckgo.com/ip3/x.com.ico"
-            },
-            {
-                "id": 3,
-                "title": "Discord",
-                "url": "https://discordapp.com/",
-                "image": "https://icons.duckduckgo.com/ip3/discordapp.com.ico"
-            },
-            {
-                "id": 4,
-                "title": "LinkedIn",
-                "url": "https://www.linkedin.com/",
-                "image": "https://icons.duckduckgo.com/ip3/www.linkedin.com.ico"
-            }
-        ]
-    },
-    {
+        "title": "Substack",
+        "url": "https://substack.com",
+        "image": "https://icons.duckduckgo.com/ip3/substack.com.ico"
+      },
+      {
         "id": 3,
-        "description": "Media",
-        "bookmarks": [
-            {
-                "id": 1,
-                "title": "YouTube",
-                "url": "https://www.youtube.com/",
-                "image": "https://icons.duckduckgo.com/ip3/www.youtube.com.ico"
-            },
-            {
-                "id": 2,
-                "title": "Spotify",
-                "url": "https://www.spotify.com/",
-                "image": "https://icons.duckduckgo.com/ip3/www.spotify.com.ico"
-            },
-            {
-                "id": 3,
-                "title": "SoundCloud",
-                "url": "https://soundcloud.com/",
-                "image": "https://icons.duckduckgo.com/ip3/soundcloud.com.ico"
-            },
-            {
-                "id": 4,
-                "title": "Twitch",
-                "url": "https://www.twitch.tv/",
-                "image": "https://icons.duckduckgo.com/ip3/www.twitch.tv.ico"
-            }
-        ]
-    },
-    {
+        "title": "Omni",
+        "url": "https://omni.se/",
+        "image": "https://icons.duckduckgo.com/ip3/omni.se.ico"
+      },
+      {
         "id": 4,
-        "description": "Streaming",
-        "bookmarks": [
-            {
-                "id": 1,
-                "title": "Netflix",
-                "url": "https://www.netflix.com/",
-                "image": "https://icons.duckduckgo.com/ip3/www.netflix.com.ico"
-            },
-            {
-                "id": 2,
-                "title": "Disney+",
-                "url": "https://www.disneyplus.com/",
-                "image": "https://icons.duckduckgo.com/ip3/www.disneyplus.com.ico"
-            },
-            {
-                "id": 3,
-                "title": "HBO Max",
-                "url": "https://www.hbomax.com/",
-                "image": "https://icons.duckduckgo.com/ip3/www.hbomax.com.ico"
-            },
-            {
-                "id": 4,
-                "title": "Crunchyroll",
-                "url": "https://www.crunchyroll.com/",
-                "image": "https://icons.duckduckgo.com/ip3/www.crunchyroll.com.ico"
-            }
-        ]
-    }
+        "title": "Reddit",
+        "url": "https://www.reddit.com/",
+        "image": "https://icons.duckduckgo.com/ip3/reddit.com.ico"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "description": "Social",
+    "bookmarks": [
+      {
+        "id": 1,
+        "title": "Facebook",
+        "url": "https://www.facebook.com/",
+        "image": "https://icons.duckduckgo.com/ip3/www.facebook.com.ico"
+      },
+      {
+        "id": 2,
+        "title": "X",
+        "url": "https://x.com/",
+        "image": "https://icons.duckduckgo.com/ip3/x.com.ico"
+      },
+      {
+        "id": 3,
+        "title": "Discord",
+        "url": "https://discordapp.com/",
+        "image": "https://icons.duckduckgo.com/ip3/discordapp.com.ico"
+      },
+      {
+        "id": 4,
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/",
+        "image": "https://icons.duckduckgo.com/ip3/www.linkedin.com.ico"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "description": "Media",
+    "bookmarks": [
+      {
+        "id": 1,
+        "title": "YouTube",
+        "url": "https://www.youtube.com/",
+        "image": "https://icons.duckduckgo.com/ip3/www.youtube.com.ico"
+      },
+      {
+        "id": 2,
+        "title": "Spotify",
+        "url": "https://www.spotify.com/",
+        "image": "https://icons.duckduckgo.com/ip3/www.spotify.com.ico"
+      },
+      {
+        "id": 3,
+        "title": "SoundCloud",
+        "url": "https://soundcloud.com/",
+        "image": "https://icons.duckduckgo.com/ip3/soundcloud.com.ico"
+      },
+      {
+        "id": 4,
+        "title": "Twitch",
+        "url": "https://www.twitch.tv/",
+        "image": "https://icons.duckduckgo.com/ip3/www.twitch.tv.ico"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "description": "Streaming",
+    "bookmarks": [
+      {
+        "id": 1,
+        "title": "Netflix",
+        "url": "https://www.netflix.com/",
+        "image": "https://icons.duckduckgo.com/ip3/www.netflix.com.ico"
+      },
+      {
+        "id": 2,
+        "title": "Disney+",
+        "url": "https://www.disneyplus.com/",
+        "image": "https://icons.duckduckgo.com/ip3/www.disneyplus.com.ico"
+      },
+      {
+        "id": 3,
+        "title": "HBO Max",
+        "url": "https://www.hbomax.com/",
+        "image": "https://icons.duckduckgo.com/ip3/www.hbomax.com.ico"
+      },
+      {
+        "id": 4,
+        "title": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/",
+        "image": "https://icons.duckduckgo.com/ip3/www.crunchyroll.com.ico"
+      }
+    ]
+  }
 ]
