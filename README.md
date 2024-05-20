@@ -13,20 +13,20 @@
 This is a start page for your browser. It is built using
 [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/),
 [Tailwind CSS](https://tailwindcss.com/), and [Vite](https://vitejs.dev/). The
-color palette used is [Rosé Pine](https://rosepinetheme.com). 
-Fonts used are [Inter](https://rsms.me/inter/) and
+color palette used is [Rosé Pine](https://rosepinetheme.com). Fonts used are
+[Inter](https://rsms.me/inter/) and
 [Metropolis](https://github.com/dw5/Metropolis)
 
 &nbsp;
 
 ## 🌟 Features
 
--   **Search**: Search the web using [Brave Search](https://search.brave.com/).
--   **Bookmarks**: Add your favorite websites to the bookmarks section.
--   **Clock**: See the current time in 24-hour format.
--   **Weather**: See the current weather in your city.
--   **Tilde**: Implementation of the [Tilde](https://github.com/xvvvyz/tilde)
-    search bar.
+- **Search**: Search the web using [Brave Search](https://search.brave.com/).
+- **Bookmarks**: Add your favorite websites to the bookmarks section.
+- **Clock**: See the current time in 24-hour format.
+- **Weather**: See the current weather in your city.
+- **Tilde**: Implementation of the [Tilde](https://github.com/xvvvyz/tilde)
+  search bar.
 
 &nbsp;
 
@@ -119,7 +119,7 @@ This project is licensed under the MIT License - see the
 
 ## 📚 Attributions
 
--   The logo is an edited version of
-    [this image](https://www.freepik.com/free-vector/cute-cat-sushi-salmon-cartoon-vector-illustration_11056477.htm#query=sushi%20cat&position=16&from_view=keyword&track=ais),
-    made by [catalyststuff](https://www.freepik.com/author/catalyststuff)
-    accessed via [Freepik](https://www.freepik.com/).
+- The logo is an edited version of
+  [this image](https://www.freepik.com/free-vector/cute-cat-sushi-salmon-cartoon-vector-illustration_11056477.htm#query=sushi%20cat&position=16&from_view=keyword&track=ais),
+  made by [catalyststuff](https://www.freepik.com/author/catalyststuff) accessed
+  via [Freepik](https://www.freepik.com/).
