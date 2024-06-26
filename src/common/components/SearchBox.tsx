@@ -30,12 +30,7 @@ export const SearchBox = () => {
     return [baseUrl, rest];
   };
 
-  const formatSearchUrl = (
-    url: string,
-    searchPath: string,
-    searchParam: string,
-    search: string
-  ) => {
+  const formatSearchUrl = (url: string, searchPath: string, searchParam: string, search: string) => {
     if (!searchPath) return url;
     const params = new URLSearchParams({ [searchParam]: search });
     return url + searchPath + params.toString();
@@ -58,19 +53,10 @@ export const SearchBox = () => {
     const typedSearchKey = searchKey as CommandKey;
 
     if (isCommandKey(typedSearchKey)) {
-      const {
-        searchTemplateUrl,
-        searchTemplateParam,
-        url: base
-      } = commands[typedSearchKey];
+      const { searchTemplateUrl, searchTemplateParam, url: base } = commands[typedSearchKey];
       // handle multiple occurrences of commandSearchDelimiter
       const search = rawSearch.join(config.commandSearchDelimiter).trim();
-      const url = formatSearchUrl(
-        base,
-        searchTemplateUrl,
-        searchTemplateParam,
-        search
-      );
+      const url = formatSearchUrl(base, searchTemplateUrl, searchTemplateParam, search);
       return url;
     }
 
@@ -86,14 +72,8 @@ export const SearchBox = () => {
       return url;
     }
 
-    const { defaultSearchUrl, defaultSearchTemplate, defaultSearchParam } =
-      config;
-    const url = formatSearchUrl(
-      defaultSearchUrl,
-      defaultSearchTemplate,
-      defaultSearchParam,
-      q
-    );
+    const { defaultSearchUrl, defaultSearchTemplate, defaultSearchParam } = config;
+    const url = formatSearchUrl(defaultSearchUrl, defaultSearchTemplate, defaultSearchParam, q);
     return url;
   };
 
@@ -115,12 +95,8 @@ export const SearchBox = () => {
   };
   const calcBaseCommand = (q: string) => {
     const { commandSearchDelimiter, commandPathDelimiter } = config;
-    const pathKey = (
-      q.split(new RegExp(`${commandPathDelimiter}(.*)`))[0] ?? ""
-    ).trim();
-    const searchKey = (
-      q.split(new RegExp(`${commandSearchDelimiter}(.*)`))[0] ?? ""
-    ).trim();
+    const pathKey = (q.split(new RegExp(`${commandPathDelimiter}(.*)`))[0] ?? "").trim();
+    const searchKey = (q.split(new RegExp(`${commandSearchDelimiter}(.*)`))[0] ?? "").trim();
     if (pathKey in commands) {
       return pathKey;
     } else if (searchKey in commands) {

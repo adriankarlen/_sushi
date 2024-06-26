@@ -7,7 +7,7 @@ export interface AppState {
 }
 
 export const useAppStore = create<AppState>()(
-  devtools(set => ({
+  devtools((set) => ({
     q: "",
     commandKey: ""
   }))
