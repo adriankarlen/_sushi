@@ -1,16 +1,9 @@
-import {
-  Bookmarks,
-  Clock,
-  Commands,
-  DateTimeWidget,
-  IconLinks,
-  SearchBox,
-  useAppStore,
-  WeatherWidget
-} from "./common";
+import { Bookmarks, Clock, Commands, DateTimeWidget, IconLinks, SearchBox, useAppStore, WeatherWidget } from "./common";
+
+import searchConfig from "./common/data/search.json";
 
 function App() {
-  const command = useAppStore(state => state.commandKey);
+  const command = useAppStore((state) => state.commandKey);
   return (
     <div className="min-h-screen App mocha">
       <main className="flex flex-col items-center justify-center min-h-screen bg-rp-base text-rp-text">
@@ -26,13 +19,17 @@ function App() {
           <nav id="dock">
             <IconLinks />
           </nav>
-          <section id="search" className="flex justify-center">
-            <h2 className="sr-only">Search</h2>
-            <SearchBox />
-          </section>
-          <section className="h-48">
-            {command ? <Commands /> : <Bookmarks />}
-          </section>
+          {searchConfig.enabled ? (
+            <>
+              <section id="search" className="flex justify-center">
+                <h2 className="sr-only">Search</h2>
+                <SearchBox />
+              </section>
+              <section className="h-48">{command ? <Commands /> : <Bookmarks />}</section>
+            </>
+          ) : (
+            <Bookmarks />
+          )}
         </section>
       </main>
     </div>
