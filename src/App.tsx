@@ -1,4 +1,13 @@
-import { Bookmarks, Clock, Commands, DateTimeWidget, IconLinks, SearchBox, useAppStore, WeatherWidget } from "./common";
+import {
+  Bookmarks,
+  Clock,
+  Commands,
+  DateTimeWidget,
+  IconLinks,
+  SearchBox,
+  useAppStore,
+  WeatherWidget,
+} from "./common";
 
 import searchConfig from "./common/data/search.json";
 
@@ -11,7 +20,7 @@ function App() {
           <DateTimeWidget />
           <WeatherWidget />
         </header>
-        <section className="flex flex-col justify-center flex-1 w-full max-w-xs p-8 pb-2 gap-y-8 md:p-0 md:max-w-3xl">
+        <section className="flex flex-col justify-center flex-1 w-full max-w-xs p-8 pb-2 gap-y-6 md:p-0 md:max-w-3xl">
           <h1 className="sr-only">_sushi</h1>
           <aside className="flex justify-around">
             <Clock />
@@ -25,7 +34,9 @@ function App() {
                 <h2 className="sr-only">Search</h2>
                 <SearchBox />
               </section>
-              <section className="h-48">{command ? <Commands /> : <Bookmarks />}</section>
+              <section className="h-48">
+                {command ? <Commands /> : <Bookmarks />}
+              </section>
             </>
           ) : (
             <Bookmarks />

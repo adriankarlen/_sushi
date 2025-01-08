@@ -9,6 +9,6 @@ export interface AppState {
 export const useAppStore = create<AppState>()(
   devtools((set) => ({
     q: "",
-    commandKey: ""
-  }))
+    commandKey: "",
+  })),
 );

@@ -1,10 +1,12 @@
 :root {
   /* Font-families */
-  --font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-header: "Metropolis", sans-serif;
+  --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif;
+  --font-header: SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif;
 
   /* SVGs */
-  --svg-search: url("/misc/logo-outline.svg");
+  --svg-search: url("/misc/search.svg");
 
   /* Colors */
   --rp-base: 32deg 57% 95%;
@@ -27,22 +29,22 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* SVGs */
-    --svg-search: url("/misc/logo-outline-dark.svg");
+    --svg-search: url("/misc/search-dark.svg");
     /* Colors */
-    --rp-base: 249deg 22% 12%;
-    --rp-surface: 247deg 23% 15%;
-    --rp-overlay: 248deg 25% 18%;
+    --rp-base: 246deg 24% 17%;
+    --rp-surface: 248deg 24% 20%;
+    --rp-overlay: 248deg 21% 26%;
     --rp-muted: 249deg 12% 47%;
     --rp-subtle: 248deg 15% 61%;
     --rp-text: 245deg 50% 91%;
     --rp-love: 343deg 76% 68%;
     --rp-gold: 35deg 88% 72%;
-    --rp-rose: 2deg 55% 83%;
-    --rp-pine: 197deg 49% 38%;
+    --rp-rose: 2deg 66% 75%;
+    --rp-pine: 197deg 48% 47%;
     --rp-foam: 189deg 43% 73%;
     --rp-iris: 267deg 57% 78%;
-    --rp-highlightLow: 244deg 18% 15%;
-    --rp-highlightMed: 249deg 15% 28%;
-    --rp-highlightHigh: 248deg 13% 36%;
+    --rp-highlightLow: 245deg 22% 20%;
+    --rp-highlightMed: 247deg 16% 30%;
+    --rp-highlightHigh: 249deg 15% 38%;
   }
 }

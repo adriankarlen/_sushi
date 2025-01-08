@@ -17,7 +17,12 @@
     "name": "Reddit",
     "searchTemplateUrl": "/search?",
     "searchTemplateParam": "q",
-    "suggestions": ["r/r/startpages", "r/r/webdev", "r/r/react", "r/r/firefoxcss"],
+    "suggestions": [
+      "r/r/startpages",
+      "r/r/webdev",
+      "r/r/react",
+      "r/r/firefoxcss"
+    ],
     "url": "https://www.reddit.com"
   },
   "s": {
@@ -38,7 +43,11 @@
     "name": "YouTube",
     "searchTemplateUrl": "/results?",
     "searchTemplateParam": "search_query",
-    "suggestions": ["y/feed/trending", "y/feed/subscriptions", "y/feed/history"],
+    "suggestions": [
+      "y/feed/trending",
+      "y/feed/subscriptions",
+      "y/feed/history"
+    ],
     "url": "https://youtube.com"
   },
   "cr": {

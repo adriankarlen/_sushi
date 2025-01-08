@@ -1,5 +1,5 @@
 {
-  "enabled": false,
+  "enabled": true,
   "defaultSearchUrl": "https://search.brave.com",
   "defaultSearchTemplate": "/search?",
   "defaultSearchParam": "q",

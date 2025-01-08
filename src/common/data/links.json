@@ -2,12 +2,19 @@
   {
     "title": "Proton Mail",
     "url": "https://mail.proton.me",
-    "paths": ["M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z", "M3 7l9 6l9 -6"]
+    "paths": [
+      "M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z",
+      "M3 7l9 6l9 -6"
+    ]
   },
   {
     "title": "Google Drive",
     "url": "https://drive.google.com/drive/my-drive",
-    "paths": ["M12 10l-6 10l-3 -5l6 -10z", "M9 15h12l-3 5h-12", "M15 15l-6 -10h6l6 10z"]
+    "paths": [
+      "M12 10l-6 10l-3 -5l6 -10z",
+      "M9 15h12l-3 5h-12",
+      "M15 15l-6 -10h6l6 10z"
+    ]
   },
   {
     "title": "Figma",

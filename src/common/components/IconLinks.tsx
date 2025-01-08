@@ -1,7 +1,15 @@
 import links from "../data/links.json";
 
 export const IconLinks = () => {
-  const colorMap = ["stroke-rp-love", "stroke-rp-gold", "stroke-rp-rose", "stroke-rp-pine", "stroke-rp-foam", "stroke-rp-iris", "stroke-rp-text"];
+  const colorMap = [
+    "stroke-rp-love",
+    "stroke-rp-gold",
+    "stroke-rp-rose",
+    "stroke-rp-pine",
+    "stroke-rp-foam",
+    "stroke-rp-iris",
+    "stroke-rp-text",
+  ];
 
   return (
     <ul className="flex flex-row flex-wrap justify-center p-0 list-none gap-x-4 gap-y-4 md:column-gap-0 md:justify-around md:p-0">

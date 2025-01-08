@@ -13,7 +13,7 @@ export const SearchBox = () => {
         "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
         "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
         "(\\#[-a-z\\d_]*)?$",
-      "i"
+      "i",
     ); // fragment locator
     return pattern.test(str);
   };
@@ -30,7 +30,12 @@ export const SearchBox = () => {
     return [baseUrl, rest];
   };
 
-  const formatSearchUrl = (url: string, searchPath: string, searchParam: string, search: string) => {
+  const formatSearchUrl = (
+    url: string,
+    searchPath: string,
+    searchParam: string,
+    search: string,
+  ) => {
     if (!searchPath) return url;
     const params = new URLSearchParams({ [searchParam]: search });
     return url + searchPath + params.toString();
@@ -53,10 +58,19 @@ export const SearchBox = () => {
     const typedSearchKey = searchKey as CommandKey;
 
     if (isCommandKey(typedSearchKey)) {
-      const { searchTemplateUrl, searchTemplateParam, url: base } = commands[typedSearchKey];
+      const {
+        searchTemplateUrl,
+        searchTemplateParam,
+        url: base,
+      } = commands[typedSearchKey];
       // handle multiple occurrences of commandSearchDelimiter
       const search = rawSearch.join(config.commandSearchDelimiter).trim();
-      const url = formatSearchUrl(base, searchTemplateUrl, searchTemplateParam, search);
+      const url = formatSearchUrl(
+        base,
+        searchTemplateUrl,
+        searchTemplateParam,
+        search,
+      );
       return url;
     }
 
@@ -72,8 +86,14 @@ export const SearchBox = () => {
       return url;
     }
 
-    const { defaultSearchUrl, defaultSearchTemplate, defaultSearchParam } = config;
-    const url = formatSearchUrl(defaultSearchUrl, defaultSearchTemplate, defaultSearchParam, q);
+    const { defaultSearchUrl, defaultSearchTemplate, defaultSearchParam } =
+      config;
+    const url = formatSearchUrl(
+      defaultSearchUrl,
+      defaultSearchTemplate,
+      defaultSearchParam,
+      q,
+    );
     return url;
   };
 
@@ -95,8 +115,12 @@ export const SearchBox = () => {
   };
   const calcBaseCommand = (q: string) => {
     const { commandSearchDelimiter, commandPathDelimiter } = config;
-    const pathKey = (q.split(new RegExp(`${commandPathDelimiter}(.*)`))[0] ?? "").trim();
-    const searchKey = (q.split(new RegExp(`${commandSearchDelimiter}(.*)`))[0] ?? "").trim();
+    const pathKey = (
+      q.split(new RegExp(`${commandPathDelimiter}(.*)`))[0] ?? ""
+    ).trim();
+    const searchKey = (
+      q.split(new RegExp(`${commandSearchDelimiter}(.*)`))[0] ?? ""
+    ).trim();
     if (pathKey in commands) {
       return pathKey;
     } else if (searchKey in commands) {
@@ -115,7 +139,7 @@ export const SearchBox = () => {
         autoFocus
         onChange={handleInputChange}
         autoComplete="off"
-        className="p-4 w-full bg-rp-surface bg-[right_1.25rem_center] bg-no-repeat bg-[length:2rem] rounded-full border-2 border-rp-overlay focus:outline focus:outline-4 focus:outline-rp-love/25 focus:border-rp-love hover:border-rp-highlightMed"
+        className="py-2 px-8 w-full bg-rp-surface bg-[right_1.25rem_center] bg-no-repeat bg-[length:2rem] rounded-full border-2 border-rp-overlay focus:outline focus:outline-4 focus:outline-rp-love/25 focus:border-rp-love hover:border-rp-highlightMed"
       />
       <button className="sr-only" tabIndex={-1}>
         Search
