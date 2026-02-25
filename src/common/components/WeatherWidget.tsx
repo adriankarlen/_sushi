@@ -73,10 +73,12 @@ export const WeatherWidget = () => {
       <h4 className="sr-only">Location &amp; Weather</h4>
       {weather.location && (
         <div className="grid items-center grid-flow-col grid-rows-2 gap-x-1">
-          <div className="font-bold text-right">{weather.location}</div>
+          <div className="font-bold text-right text-rp-text">
+            {weather.location}
+          </div>
           <p
             title={weather.details.main}
-            className="flex items-center capitalize text-rp-highlightHigh"
+            className="flex items-center capitalize text-rp-muted"
           >
             <img
               src={weather.details.icon}
@@ -84,7 +86,7 @@ export const WeatherWidget = () => {
               className="mr-1.5 w-6"
             />
             {weather.details.description}
-            <span className="mx-1">|</span>
+            <span className="mx-1 text-rp-subtle">|</span>
             {weather.details.temperature}
           </p>
         </div>
