@@ -37,6 +37,7 @@ export const SearchBox = () => {
     search: string,
   ) => {
     if (!searchPath) return url;
+    if (!searchParam) return url + searchPath + search;
     const params = new URLSearchParams({ [searchParam]: search });
     return url + searchPath + params.toString();
   };
