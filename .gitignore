@@ -24,3 +24,6 @@ yarn-error.log*
 
 # editor directories and files
 .vscode/
+
+# build
+dist/

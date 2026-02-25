@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { useAppStore } from "../";
 import commands from "../data/commands.json";
 import config from "../data/search.json";
@@ -5,6 +6,17 @@ import config from "../data/search.json";
 type CommandKey = keyof typeof commands;
 
 export const SearchBox = () => {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if ((e.target as HTMLElement).closest("a")) return;
+      inputRef.current?.focus();
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
   const isUrl = (str: string) => {
     const pattern = new RegExp(
       "^(https?:\\/\\/)?" + // protocol
@@ -131,17 +143,24 @@ export const SearchBox = () => {
     }
   };
 
+  const q = useAppStore((state) => state.q);
+
   return (
-    <form onSubmit={handleSubmit} className="flex flex-auto w-full">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-auto w-full justify-center"
+    >
       <input
+        ref={inputRef}
         type="text"
         id="q"
         name="q"
         autoFocus
         onChange={handleInputChange}
         autoComplete="off"
-        className="py-2 px-8 w-full bg-rp-surface bg-[right_1.25rem_center] bg-no-repeat bg-[length:2rem] rounded-full border-2 border-rp-overlay focus:outline focus:outline-4 focus:outline-rp-love/25 focus:border-rp-love hover:border-rp-highlightMed"
+        className="w-0 h-0 absolute opacity-0"
       />
+      <span className="text-rp-text text-3xl">{q}</span>
       <button className="sr-only" tabIndex={-1}>
         Search
       </button>

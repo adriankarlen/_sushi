@@ -19,6 +19,7 @@ h6 {
 
 #time {
   -webkit-text-stroke: 1px hsl(var(--rp-love));
+  paint-order: stroke fill;
   text-shadow:
     -5px 5px 0px hsl(var(--rp-love)),
     -10px 10px hsl(var(--rp-gold)),
@@ -29,10 +30,6 @@ h6 {
 #dock a:focus,
 #dock a:hover {
   animation: slime 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-}
-
-#search input {
-  background-image: var(--svg-search);
 }
 
 #bookmarks .category {

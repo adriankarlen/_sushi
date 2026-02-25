@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Unbounded:wght@200..900&display=swap');
+
 :root {
   /* Font-families */
-  --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-    Helvetica, Arial, sans-serif;
-  --font-header: SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-    Helvetica, Arial, sans-serif;
+  --font-sans-serif: "Funnel Display", sans-serif;
+  --font-header: Unbounded, sans-serif;
+  --font-clock: Unbounded, sans-serif;
 
   /* SVGs */
   --svg-search: url("/misc/search.svg");

@@ -1,5 +1,5 @@
+import { useEffect, useState } from "react";
 import config from "../data/datetime.json";
-import { useState, useEffect } from "react";
 
 export const Clock = () => {
   const [time, setTime] = useState(new Date());
@@ -21,6 +21,7 @@ export const Clock = () => {
       <h1
         id="time"
         className="font-black text-9xl dark:text-rp-text text-rp-base"
+        style={{ fontFamily: "var(--font-clock)" }}
       >
         {time.toLocaleTimeString(
           config.timeFormat,
