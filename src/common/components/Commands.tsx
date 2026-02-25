@@ -21,14 +21,16 @@ export const Commands = () => {
   };
 
   const linkClass =
-    "flex flex-col items-center px-6 py-2 m-2 font-medium text-center border-2 rounded-full bg-rp-surface border-rp-overlay text-rp-muted hover:text-rp-rose hover:bg-rp-overlay hover:border-rp-rose/75 focus-visible:outline-none focus-visible:text-rp-love focus:text-rp-love";
+    "flex flex-col items-center px-6 py-2 m-2 font-bold text-center border-2 border-rp-text text-rp-text hover:bg-rp-love hover:text-rp-base hover:border-rp-love focus-visible:outline-none focus-visible:bg-rp-love focus-visible:text-rp-base focus-visible:border-rp-love transition-all duration-100";
 
   if (activeKey) {
     const command = commands[activeKey];
     return (
       <div id="commands" className="flex flex-col items-center justify-around">
         <h2 className="sr-only">Commands</h2>
-        <h4 className="text-lg font-bold">{command.name}</h4>
+        <h4 className="text-xl font-black text-rp-muted uppercase tracking-wider">
+          {command.name}
+        </h4>
         <div className="flex flex-row flex-wrap justify-center">
           {command.suggestions.map((suggestion: string) => (
             <a

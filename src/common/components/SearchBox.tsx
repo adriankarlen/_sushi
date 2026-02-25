@@ -11,6 +11,7 @@ export const SearchBox = () => {
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       if ((e.target as HTMLElement).closest("a")) return;
+      e.preventDefault();
       inputRef.current?.focus();
     };
     document.addEventListener("mousedown", handleClick);
@@ -160,7 +161,7 @@ export const SearchBox = () => {
         autoComplete="off"
         className="w-0 h-0 absolute opacity-0"
       />
-      <span className="text-rp-text text-3xl">{q}</span>
+      <span className="text-rp-text text-3xl font-bold">{q}</span>
       <button className="sr-only" tabIndex={-1}>
         Search
       </button>

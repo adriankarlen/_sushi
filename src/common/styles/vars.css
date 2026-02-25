@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Unbounded:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Unbounded:wght@200..900&display=swap");
 
 :root {
   /* Font-families */
@@ -6,10 +6,7 @@
   --font-header: Unbounded, sans-serif;
   --font-clock: Unbounded, sans-serif;
 
-  /* SVGs */
-  --svg-search: url("/misc/search.svg");
-
-  /* Colors */
+  /* Colors — Rosé Pine Dawn */
   --rp-base: 32deg 57% 95%;
   --rp-surface: 35deg 100% 98%;
   --rp-overlay: 33deg 43% 91%;
@@ -29,9 +26,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* SVGs */
-    --svg-search: url("/misc/search-dark.svg");
-    /* Colors */
+    /* Colors — Rosé Pine */
     --rp-base: 249deg 22% 12%;
     --rp-surface: 247deg 23% 15%;
     --rp-overlay: 248deg 25% 18%;
@@ -44,8 +39,8 @@
     --rp-pine: 197deg 49% 38%;
     --rp-foam: 189deg 43% 73%;
     --rp-iris: 267deg 57% 78%;
-    --rp-highlight-low: 244deg 18% 15%;
-    --rp-highlight-med: 249deg 15% 28%;
-    --rp-highlight-high: 248deg 13% 36%;
+    --rp-highlightLow: 244deg 18% 15%;
+    --rp-highlightMed: 249deg 15% 28%;
+    --rp-highlightHigh: 248deg 13% 36%;
   }
 }

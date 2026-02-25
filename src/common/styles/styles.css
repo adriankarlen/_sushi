@@ -3,7 +3,7 @@ body {
 }
 
 ::selection {
-  background-color: hsl(var(--rp-rose));
+  background-color: hsl(var(--rp-love));
   color: hsl(var(--rp-base));
 }
 
@@ -25,15 +25,6 @@ h6 {
     -10px 10px hsl(var(--rp-gold)),
     -15px 15px 0px hsl(var(--rp-iris)),
     -20px 20px 0px hsl(var(--rp-pine));
-}
-
-#dock a:focus,
-#dock a:hover {
-  animation: slime 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-}
-
-#bookmarks .category {
-  font-family: var(--font-header);
 }
 
 .sr-only {

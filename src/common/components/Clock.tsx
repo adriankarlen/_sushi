@@ -20,7 +20,7 @@ export const Clock = () => {
       <h1 className="sr-only">Clock</h1>
       <h1
         id="time"
-        className="font-black text-9xl dark:text-rp-text text-rp-base"
+        className="font-black text-9xl text-rp-text"
         style={{ fontFamily: "var(--font-clock)" }}
       >
         {time.toLocaleTimeString(
