@@ -3,8 +3,8 @@
 :root {
   /* Font-families */
   --font-sans-serif: "Funnel Display", sans-serif;
-  --font-header: Unbounded, sans-serif;
-  --font-clock: Unbounded, sans-serif;
+  --font-header: "Unbounded", sans-serif;
+  --font-clock: "Unbounded", sans-serif;
 
   /* Colors — Rosé Pine Dawn */
   --rp-base: 32deg 57% 95%;

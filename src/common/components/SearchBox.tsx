@@ -161,7 +161,7 @@ export const SearchBox = () => {
         autoComplete="off"
         className="w-0 h-0 absolute opacity-0"
       />
-      <span className="text-rp-text text-3xl font-bold">{q}</span>
+      <span className="text-rp-rose text-5xl font-bold">{q}</span>
       <button className="sr-only" tabIndex={-1}>
         Search
       </button>
